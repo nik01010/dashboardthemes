@@ -106,24 +106,24 @@ Example of creating a custom theme object. Each parameter can be changed as requ
 
   ### creating custom theme object
   theme_blue_gradient <- shinyDashboardThemeDIY(
-    
+
     ### general
     appFontFamily = "Arial"
     ,appFontColor = "rgb(0,0,0)"
-    ,bodyBackColor = "rgb(240,240,240)"
-    
+    ,bodyBackColor = "rgb(248,248,248)"
+  
     ### header
     ,logoBackColor = "rgb(23,103,124)"
-    
-    ,headerButtonBackColor = "rgb(225,225,225)"
+  
+    ,headerButtonBackColor = "rgb(238,238,238)"
     ,headerButtonIconColor = "rgb(75,75,75)"
-    ,headerButtonBackColorHover = "rgb(200,200,200)"
+    ,headerButtonBackColorHover = "rgb(210,210,210)"
     ,headerButtonIconColorHover = "rgb(0,0,0)"
-    
-    ,headerBackColor = "rgb(225,225,225)"
+  
+    ,headerBackColor = "rgb(238,238,238)"
     ,headerBoxShadowColor = "#aaaaaa"
     ,headerBoxShadowSize = "2px 2px 2px"
-    
+  
     ### sidebar
     ,sidebarBackColor = cssGradientThreeColors(
       direction = "down"
@@ -134,22 +134,27 @@ Example of creating a custom theme object. Each parameter can be changed as requ
       ,colorMiddlePos = 50
       ,colorEndPos = 100
     )
-    
+    ,sidebarPadding = 0
+  
+    ,sidebarMenuBackColor = "transparent"
+    ,sidebarMenuPadding = 0
+    ,sidebarMenuBorderRadius = 0
+  
     ,sidebarShadowRadius = "3px 5px 5px"
     ,sidebarShadowColor = "#aaaaaa"
-    
+  
     ,sidebarUserTextColor = "rgb(255,255,255)"
-    
+  
     ,sidebarSearchBackColor = "rgb(55,72,80)"
     ,sidebarSearchIconColor = "rgb(153,153,153)"
     ,sidebarSearchBorderColor = "rgb(55,72,80)"
-    
+  
     ,sidebarTabTextColor = "rgb(255,255,255)"
-    ,sidebarTabTextSize = 14
+    ,sidebarTabTextSize = 13
     ,sidebarTabBorderStyle = "none none solid none"
     ,sidebarTabBorderColor = "rgb(35,106,135)"
     ,sidebarTabBorderWidth = 1
-    
+  
     ,sidebarTabBackColorSelected = cssGradientThreeColors(
       direction = "right"
       ,colorStart = "rgba(44,222,235,1)"
@@ -161,7 +166,7 @@ Example of creating a custom theme object. Each parameter can be changed as requ
     )
     ,sidebarTabTextColorSelected = "rgb(0,0,0)"
     ,sidebarTabRadiusSelected = "0px 20px 20px 0px"
-    
+  
     ,sidebarTabBackColorHover = cssGradientThreeColors(
       direction = "right"
       ,colorStart = "rgba(44,222,235,1)"
@@ -176,10 +181,10 @@ Example of creating a custom theme object. Each parameter can be changed as requ
     ,sidebarTabBorderColorHover = "rgb(75,126,151)"
     ,sidebarTabBorderWidthHover = 1
     ,sidebarTabRadiusHover = "0px 20px 20px 0px"
-    
+  
     ### boxes
     ,boxBackColor = "rgb(255,255,255)"
-    ,boxBorderRadius = 10
+    ,boxBorderRadius = 5
     ,boxShadowSize = "0px 1px 1px"
     ,boxShadowColor = "rgba(0,0,0,.1)"
     ,boxTitleSize = 16
@@ -188,39 +193,39 @@ Example of creating a custom theme object. Each parameter can be changed as requ
     ,boxSuccessColor = "rgba(0,255,213,1)"
     ,boxWarningColor = "rgb(244,156,104)"
     ,boxDangerColor = "rgb(255,88,55)"
-    
+  
     ,tabBoxTabColor = "rgb(255,255,255)"
     ,tabBoxTabTextSize = 14
     ,tabBoxTabTextColor = "rgb(0,0,0)"
     ,tabBoxTabTextColorSelected = "rgb(0,0,0)"
     ,tabBoxBackColor = "rgb(255,255,255)"
     ,tabBoxHighlightColor = "rgba(44,222,235,1)"
-    ,tabBoxBorderRadius = 10
-    
+    ,tabBoxBorderRadius = 5
+  
     ### inputs
     ,buttonBackColor = "rgb(245,245,245)"
     ,buttonTextColor = "rgb(0,0,0)"
     ,buttonBorderColor = "rgb(200,200,200)"
-    ,buttonBorderRadius = 10
-    
+    ,buttonBorderRadius = 5
+  
     ,buttonBackColorHover = "rgb(235,235,235)"
     ,buttonTextColorHover = "rgb(100,100,100)"
     ,buttonBorderColorHover = "rgb(200,200,200)"
-    
+  
     ,textboxBackColor = "rgb(255,255,255)"
     ,textboxBorderColor = "rgb(200,200,200)"
-    ,textboxBorderRadius = 10
+    ,textboxBorderRadius = 5
     ,textboxBackColorSelect = "rgb(245,245,245)"
     ,textboxBorderColorSelect = "rgb(200,200,200)"
-    
+  
     ### tables
     ,tableBackColor = "rgb(255,255,255)"
-    ,tableBorderColor = "rgb(235,235,235)"
+    ,tableBorderColor = "rgb(240,240,240)"
     ,tableBorderTopSize = 1
     ,tableBorderRowSize = 1
-    
-  )  
-
+  
+  )
+  
 
 ```
 
@@ -243,7 +248,7 @@ Example of creating a custom logo object. Each parameter can be changed as requi
 
   ### creating custom logo object
   logo_blue_gradient <- shinyDashboardLogoDIY(
-    
+
     boldText = "SD"
     ,mainText = "Themes"
     ,textSize = 16
@@ -252,7 +257,7 @@ Example of creating a custom logo object. Each parameter can be changed as requi
     ,badgeTextSize = 2
     ,badgeBackColor = "#40E0D0"
     ,badgeBorderRadius = 3
-    
+  
   )
 
 ```
@@ -267,34 +272,41 @@ Several themes have been created using the new functionality:
 | ------------------ |-----------------------------------------------|
 | Blue gradient | Demonstrates use of gradients, shadows and rounded corners |
 | BoE website | Styled similarly to the new BoE website |
+| Grey light | Simple, light theme using a grey colour schemes |
 | Grey dark | Demonstrates use of inverted dark colour schemes |
 | OneNote | Styled similarly to the OneNote application |
-| Poor man's Flatly | Poor man's version of the <a href="https://bootswatch.com/flatly/" target="_blank">Flatly</a> theme (the original is used for this document)|
+| Poor man's Flatly | Poor man's version of the <a href="https://bootswatch.com/flatly/" target="_blank">Flatly</a> theme
+| Purple gradient | Demonstrates high use of gradients and a smaller sidebar |
 
 
 ## Theme screenshots
 
-<!-- full  -->
-
 ### Blue gradient
-<a href="https://ibb.co/mtempw" target="_blank"><img src="https://preview.ibb.co/dAgz9w/blue_gradient_round.png" alt="blue_gradient_round" border="0"></a>
+<a href="https://ibb.co/dbMBHn" target="_blank"><img src="https://preview.ibb.co/ik0hOS/blue_gradient.png" alt="blue_gradient" border="0"></a>
 <br>
 
 ### BoE website
-<a href="https://ibb.co/cOcvhG" target="_blank"><img src="https://preview.ibb.co/kysjbb/boe_website.png" alt="boe_website" border="0"></a>
+<a href="https://ibb.co/bvGNOS" target="_blank"><img src="https://preview.ibb.co/mx7U3S/boe_website.png" alt="boe_website" border="0"></a>
+<br>
+
+### Grey light
+<a href="https://ibb.co/iuFGiS" target="_blank"><img src="https://preview.ibb.co/cVBp3S/grey_light.png" alt="grey_light" border="0"></a>
 <br>
 
 ### Grey dark
-<a href="https://ibb.co/iSpmpw" target="_blank"><img src="https://preview.ibb.co/nBagNG/grey_dark.png" alt="grey_dark" border="0"></a>
+<a href="https://ibb.co/cNgYV7" target="_blank"><img src="https://preview.ibb.co/bTgp3S/grey_dark.png" alt="grey_dark" border="0"></a>
 <br>
 
 ### OneNote
-<a href="https://ibb.co/ngL4bb" target="_blank"><img src="https://preview.ibb.co/h3YPbb/onenote.png" alt="onenote" border="0"></a>
+<a href="https://ibb.co/mW4WHn" target="_blank"><img src="https://preview.ibb.co/fxYQcn/onenote.png" alt="onenote" border="0"></a>
 <br>
 
 ### Poor man's Flatly
-<a href="https://ibb.co/buxT2G" target="_blank"><img src="https://preview.ibb.co/iEmMNG/poor_mans_flatly.png" alt="poor_mans_flatly" border="0"></a><br />
+<a href="https://ibb.co/mYhkcn" target="_blank"><img src="https://preview.ibb.co/hRnwiS/poor_mans_flatly.png" alt="poor_mans_flatly" border="0"></a>
 <br>
+
+### Purple gradient
+<a href="https://ibb.co/ea4LA7" target="_blank"><img src="https://preview.ibb.co/mAK93S/purple_gradient.png" alt="purple_gradient" border="0"></a>
 
 ## Known issues
   
@@ -302,15 +314,10 @@ Some application components have not been fully customised:
 
 - Action button when pressed
 
-- Sidebar search box when pressed
-
 - Dropdown menu background
 
 - Popup menu and placeholder font colour in date inputs
 
 - Checkbox and radio buttons
-
-- Info box icon corners
-
 
 

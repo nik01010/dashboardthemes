@@ -178,17 +178,17 @@ theme_blue_gradient <- shinyDashboardThemeDIY(
   ### general
   appFontFamily = "Arial"
   ,appFontColor = "rgb(0,0,0)"
-  ,bodyBackColor = "rgb(240,240,240)"
+  ,bodyBackColor = "rgb(248,248,248)"
 
   ### header
   ,logoBackColor = "rgb(23,103,124)"
 
-  ,headerButtonBackColor = "rgb(225,225,225)"
+  ,headerButtonBackColor = "rgb(238,238,238)"
   ,headerButtonIconColor = "rgb(75,75,75)"
-  ,headerButtonBackColorHover = "rgb(200,200,200)"
+  ,headerButtonBackColorHover = "rgb(210,210,210)"
   ,headerButtonIconColorHover = "rgb(0,0,0)"
 
-  ,headerBackColor = "rgb(225,225,225)"
+  ,headerBackColor = "rgb(238,238,238)"
   ,headerBoxShadowColor = "#aaaaaa"
   ,headerBoxShadowSize = "2px 2px 2px"
 
@@ -204,7 +204,7 @@ theme_blue_gradient <- shinyDashboardThemeDIY(
   )
   ,sidebarPadding = 0
 
-  ,sidebarMenuBackColor = ""
+  ,sidebarMenuBackColor = "transparent"
   ,sidebarMenuPadding = 0
   ,sidebarMenuBorderRadius = 0
 
@@ -218,7 +218,7 @@ theme_blue_gradient <- shinyDashboardThemeDIY(
   ,sidebarSearchBorderColor = "rgb(55,72,80)"
 
   ,sidebarTabTextColor = "rgb(255,255,255)"
-  ,sidebarTabTextSize = 14
+  ,sidebarTabTextSize = 13
   ,sidebarTabBorderStyle = "none none solid none"
   ,sidebarTabBorderColor = "rgb(35,106,135)"
   ,sidebarTabBorderWidth = 1
@@ -252,7 +252,7 @@ theme_blue_gradient <- shinyDashboardThemeDIY(
 
   ### boxes
   ,boxBackColor = "rgb(255,255,255)"
-  ,boxBorderRadius = 10
+  ,boxBorderRadius = 5
   ,boxShadowSize = "0px 1px 1px"
   ,boxShadowColor = "rgba(0,0,0,.1)"
   ,boxTitleSize = 16
@@ -268,13 +268,13 @@ theme_blue_gradient <- shinyDashboardThemeDIY(
   ,tabBoxTabTextColorSelected = "rgb(0,0,0)"
   ,tabBoxBackColor = "rgb(255,255,255)"
   ,tabBoxHighlightColor = "rgba(44,222,235,1)"
-  ,tabBoxBorderRadius = 10
+  ,tabBoxBorderRadius = 5
 
   ### inputs
   ,buttonBackColor = "rgb(245,245,245)"
   ,buttonTextColor = "rgb(0,0,0)"
   ,buttonBorderColor = "rgb(200,200,200)"
-  ,buttonBorderRadius = 10
+  ,buttonBorderRadius = 5
 
   ,buttonBackColorHover = "rgb(235,235,235)"
   ,buttonTextColorHover = "rgb(100,100,100)"
@@ -282,13 +282,13 @@ theme_blue_gradient <- shinyDashboardThemeDIY(
 
   ,textboxBackColor = "rgb(255,255,255)"
   ,textboxBorderColor = "rgb(200,200,200)"
-  ,textboxBorderRadius = 10
+  ,textboxBorderRadius = 5
   ,textboxBackColorSelect = "rgb(245,245,245)"
   ,textboxBorderColorSelect = "rgb(200,200,200)"
 
   ### tables
   ,tableBackColor = "rgb(255,255,255)"
-  ,tableBorderColor = "rgb(235,235,235)"
+  ,tableBorderColor = "rgb(240,240,240)"
   ,tableBorderTopSize = 1
   ,tableBorderRowSize = 1
 
