@@ -793,13 +793,13 @@ shinyDashboardThemeDIY <- function(appFontFamily, appFontColor, logoBackColor, b
           }
 
           /* box: default color */
-            .box.box-solid>.box-header, .box>.box-header {
+          .box.box-solid>.box-header, .box>.box-header {
             color: ', appFontColor, ';
           }
-            .box.box-solid>.box-header {
+          .box.box-solid>.box-header {
             border-radius: ', boxBorderRadius, 'px;
           }
-            .box.box-solid, .box {
+          .box.box-solid, .box {
             border-radius: ', boxBorderRadius, 'px;
             border-top-color: ', boxDefaultColor, ';
           }
