@@ -24,7 +24,7 @@ library(devtools)
 install_github("nik01010/dashboardthemes")
 ```
 
-### Functions
+## Functions
 
 | Function       | Description                | Input | Output             |
 | ------------- |----------------------|----------------------|-------------------|
@@ -34,7 +34,7 @@ install_github("nik01010/dashboardthemes")
 | shinyDashboardLogoDIY | Creates a custom logo object. Inspired from <a href="http://www.dataseries.org/" target="_blank">here</a> | Size and colour for the logo. See separate tab for input options | Logo settings object |
 | cssGradientThreeColors | Creates a three colour gradient to be used in themes | Gradient direction, colours, position of middle colour | CSS gradient |
 
-### Using logos
+## Using logos
 Use by inserting into the title parameter within the dashboardHeader part of an application.
 ```R
 
@@ -53,7 +53,7 @@ Use by inserting into the title parameter within the dashboardHeader part of an 
 
 ```
 
-### Using themes
+## Using themes
 Use by inserting into the dashboardBody part of an application.
 ```R
 
@@ -73,7 +73,7 @@ Use by inserting into the dashboardBody part of an application.
 
 ```
 
-### Creating new logos
+## Creating new logos
 Example of creating a custom logo object. Each parameter can be changed as required.
 ```R
 
@@ -106,7 +106,7 @@ Example of creating a custom logo object. Each parameter can be changed as requi
 
 ```
 
-### Creating new themes
+## Creating new themes
 Example of creating a custom theme object. Each parameter can be changed as required.
 ```R
 
@@ -247,7 +247,7 @@ Example of creating a custom theme object. Each parameter can be changed as requ
 
 ```
 
-### New themes
+## New themes
 
 | Theme          | Code | Description                        |
 | ------------------ |------------|-----------------------------------------------|
