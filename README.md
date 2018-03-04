@@ -26,8 +26,8 @@ install_github("dashboardthemes/nik01010")
 
 ### Functions
 
-| Function       | Description                | Input | Output        |
-| ------------- |----------------------|----------------------|---------------|
+| Function       | Description                | Input | Output             |
+| ------------- |----------------------|----------------------|-------------------|
 | shinyDashboardThemes | Calls a custom theme created using shinyDashboardThemeDIY | Theme name | Theme settings object |
 | shinyDashboardLogo | Calls a custom logo created using shinyDashboardLogoDIY | Theme name | Logo settings object |
 | shinyDashboardThemeDIY | Creates a custom theme object | Size, colour and other settings for each UI element. See separate tab for input options | Theme settings object |
