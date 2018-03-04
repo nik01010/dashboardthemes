@@ -14,7 +14,7 @@ An R package designed to provide enhanced theme options for Shinydashboard appli
 
 - Easy creation of new themes and logos, without knowledge of CSS code.
 
-- Use of live theme switchers in apps (implemented in testing, to be added in package)
+- Use of live theme switchers in apps (implemented in testing, to be added in package).
   
 
 ## Installation
