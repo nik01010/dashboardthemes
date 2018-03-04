@@ -8,7 +8,7 @@
 \description{
 The dashboardthemes package provides two main important features:
 \itemize{
-  \item Using pre-defined themes and logos for dashboards.
+  \item Using new pre-defined themes and logos for dashboards.
   \item Creating custom themes and logos for dashboards.
 }
 }
