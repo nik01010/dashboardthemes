@@ -20,8 +20,8 @@ An R package designed to provide enhanced theme options for Shinydashboard appli
 ## Installation
 
 ```R
-library("devtools")
-install_github("dashboardthemes/nik01010")
+library(devtools)
+install_github("nik01010/dashboardthemes")
 ```
 
 ### Functions
