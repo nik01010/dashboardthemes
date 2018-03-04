@@ -1,0 +1,316 @@
+---
+title: "Using dashboardthemes"
+author: "Nik Lilovski"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Using dashboardthemes}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+
+## Introduction
+
+There are two main methods of creating interfaces to the **R** language: using the original <a href="https://shiny.rstudio.com/" target="_blank">shiny</a> package, or the newer <a href="https://rstudio.github.io/shinydashboard/" target="_blank">shinydashboard</a> package.
+
+One advantage of the original package is being able to change the overall look of applications with <a href="https://rstudio.github.io/shinythemes/" target="_blank">shinythemes</a>. The dashboard package includes a more modern set of user interface options, like collapsible sidebars and boxes, but unfortunately doesn't support the same enhanced themes, instead offering a very limited set of <a href="https://rstudio.github.io/shinydashboard/appearance.html" target="_blank">skins</a>.
+
+This document presents a new method of customising Shinydashboard applications using themes.
+
+
+## New R functions
+
+The large amount of code required to change the application appearance has been wrapped into several convenient and easy-to-use **R** functions, removing the need for end-users to change the underlying CSS code manually.
+
+The new functions are described below:
+
+| Function       | Description                | Input | Output        |
+| ------------- |----------------------|----------------------|---------------|
+| shinyDashboardThemes | Calls a custom theme created using shinyDashboardThemeDIY | Theme name | Theme settings object |
+| shinyDashboardLogo | Calls a custom logo created using shinyDashboardLogoDIY | Theme name | Logo settings object |
+| shinyDashboardThemeDIY | Creates a custom theme object | Size, colour and other settings for each UI element. See separate tab for input options | Theme settings object |
+| shinyDashboardLogoDIY | Creates a custom logo object. Inspired from <a href="http://www.dataseries.org/" target="_blank">here</a> | Size and colour for the logo. See separate tab for input options | Logo settings object |
+| cssGradientThreeColors | Creates a three colour gradient to be used in themes | Gradient direction, colours, position of middle colour | CSS gradient |
+
+
+## Using the new functions
+
+Examples of using each function are provided below:
+
+### shinyDashboardThemes
+
+Use by inserting into the dashboardBody part of an application.
+```{r, eval = FALSE}
+
+  ...
+  ### ui body
+  dashboardBody(
+    
+    ### changing theme
+    shinyDashboardThemes(
+      theme = "blue_gradient"
+    )
+    
+    ### ui tabs
+    ,tabItems(
+      tabItem(
+        ...
+
+```
+
+### shinyDashboardLogo
+
+Use by inserting into the title parameter within the dashboardHeader part of an application.
+```{r, eval = FALSE}
+
+  ...
+  ### ui
+  ui <- dashboardPage(
+    
+    ### ui header
+    dashboardHeader(
+  
+      ### changing logo
+      title = shinyDashboardLogo(
+        theme = "blue_gradient"
+      )
+      ...
+
+```
+
+### shinyDashboardThemeDIY
+
+Example of creating a custom theme object. Each parameter can be changed as required.
+```{r, eval = FALSE}
+
+  ### calling custom theme object in shinydashboard
+    ...
+    ### ui body
+    dashboardBody(
+      
+      ### changing theme
+      theme_blue_gradient
+      
+      ### ui tabs
+      ,tabItems(
+        tabItem(
+          ...
+
+  ### creating custom theme object
+  theme_blue_gradient <- shinyDashboardThemeDIY(
+    
+    ### general
+    appFontFamily = "Arial"
+    ,appFontColor = "rgb(0,0,0)"
+    ,bodyBackColor = "rgb(240,240,240)"
+    
+    ### header
+    ,logoBackColor = "rgb(23,103,124)"
+    
+    ,headerButtonBackColor = "rgb(225,225,225)"
+    ,headerButtonIconColor = "rgb(75,75,75)"
+    ,headerButtonBackColorHover = "rgb(200,200,200)"
+    ,headerButtonIconColorHover = "rgb(0,0,0)"
+    
+    ,headerBackColor = "rgb(225,225,225)"
+    ,headerBoxShadowColor = "#aaaaaa"
+    ,headerBoxShadowSize = "2px 2px 2px"
+    
+    ### sidebar
+    ,sidebarBackColor = cssGradientThreeColors(
+      direction = "down"
+      ,colorStart = "rgb(20,97,117)"
+      ,colorMiddle = "rgb(56,161,187)"
+      ,colorEnd = "rgb(3,22,56)"
+      ,colorStartPos = 0
+      ,colorMiddlePos = 50
+      ,colorEndPos = 100
+    )
+    
+    ,sidebarShadowRadius = "3px 5px 5px"
+    ,sidebarShadowColor = "#aaaaaa"
+    
+    ,sidebarUserTextColor = "rgb(255,255,255)"
+    
+    ,sidebarSearchBackColor = "rgb(55,72,80)"
+    ,sidebarSearchIconColor = "rgb(153,153,153)"
+    ,sidebarSearchBorderColor = "rgb(55,72,80)"
+    
+    ,sidebarTabTextColor = "rgb(255,255,255)"
+    ,sidebarTabTextSize = 14
+    ,sidebarTabBorderStyle = "none none solid none"
+    ,sidebarTabBorderColor = "rgb(35,106,135)"
+    ,sidebarTabBorderWidth = 1
+    
+    ,sidebarTabBackColorSelected = cssGradientThreeColors(
+      direction = "right"
+      ,colorStart = "rgba(44,222,235,1)"
+      ,colorMiddle = "rgba(44,222,235,1)"
+      ,colorEnd = "rgba(0,255,213,1)"
+      ,colorStartPos = 0
+      ,colorMiddlePos = 30
+      ,colorEndPos = 100
+    )
+    ,sidebarTabTextColorSelected = "rgb(0,0,0)"
+    ,sidebarTabRadiusSelected = "0px 20px 20px 0px"
+    
+    ,sidebarTabBackColorHover = cssGradientThreeColors(
+      direction = "right"
+      ,colorStart = "rgba(44,222,235,1)"
+      ,colorMiddle = "rgba(44,222,235,1)"
+      ,colorEnd = "rgba(0,255,213,1)"
+      ,colorStartPos = 0
+      ,colorMiddlePos = 30
+      ,colorEndPos = 100
+    )
+    ,sidebarTabTextColorHover = "rgb(50,50,50)"
+    ,sidebarTabBorderStyleHover = "none none solid none"
+    ,sidebarTabBorderColorHover = "rgb(75,126,151)"
+    ,sidebarTabBorderWidthHover = 1
+    ,sidebarTabRadiusHover = "0px 20px 20px 0px"
+    
+    ### boxes
+    ,boxBackColor = "rgb(255,255,255)"
+    ,boxBorderRadius = 10
+    ,boxShadowSize = "0px 1px 1px"
+    ,boxShadowColor = "rgba(0,0,0,.1)"
+    ,boxTitleSize = 16
+    ,boxDefaultColor = "rgb(210,214,220)"
+    ,boxPrimaryColor = "rgba(44,222,235,1)"
+    ,boxSuccessColor = "rgba(0,255,213,1)"
+    ,boxWarningColor = "rgb(244,156,104)"
+    ,boxDangerColor = "rgb(255,88,55)"
+    
+    ,tabBoxTabColor = "rgb(255,255,255)"
+    ,tabBoxTabTextSize = 14
+    ,tabBoxTabTextColor = "rgb(0,0,0)"
+    ,tabBoxTabTextColorSelected = "rgb(0,0,0)"
+    ,tabBoxBackColor = "rgb(255,255,255)"
+    ,tabBoxHighlightColor = "rgba(44,222,235,1)"
+    ,tabBoxBorderRadius = 10
+    
+    ### inputs
+    ,buttonBackColor = "rgb(245,245,245)"
+    ,buttonTextColor = "rgb(0,0,0)"
+    ,buttonBorderColor = "rgb(200,200,200)"
+    ,buttonBorderRadius = 10
+    
+    ,buttonBackColorHover = "rgb(235,235,235)"
+    ,buttonTextColorHover = "rgb(100,100,100)"
+    ,buttonBorderColorHover = "rgb(200,200,200)"
+    
+    ,textboxBackColor = "rgb(255,255,255)"
+    ,textboxBorderColor = "rgb(200,200,200)"
+    ,textboxBorderRadius = 10
+    ,textboxBackColorSelect = "rgb(245,245,245)"
+    ,textboxBorderColorSelect = "rgb(200,200,200)"
+    
+    ### tables
+    ,tableBackColor = "rgb(255,255,255)"
+    ,tableBorderColor = "rgb(235,235,235)"
+    ,tableBorderTopSize = 1
+    ,tableBorderRowSize = 1
+    
+  )  
+
+
+```
+
+### shinyDashboardLogoDIY
+
+Example of creating a custom logo object. Each parameter can be changed as required.
+```{r, eval = FALSE}
+
+  ### calling custom logo object in shinydashboard
+    ...
+    ### ui
+    ui <- dashboardPage(
+      
+      ### ui header
+      dashboardHeader(
+    
+        ### changing logo
+        title = logo_blue_gradient
+        ...
+
+  ### creating custom logo object
+  logo_blue_gradient <- shinyDashboardLogoDIY(
+    
+    boldText = "SD"
+    ,mainText = "Themes"
+    ,textSize = 16
+    ,badgeText = "BETA"
+    ,badgeTextColor = "white"
+    ,badgeTextSize = 2
+    ,badgeBackColor = "#40E0D0"
+    ,badgeBorderRadius = 3
+    
+  )
+
+```
+
+
+## New themes
+
+Several themes have been created using the new functionality:
+
+
+| Theme          | Description                        |
+| ------------------ |-----------------------------------------------|
+| Blue gradient | Demonstrates use of gradients, shadows and rounded corners |
+| BoE website | Styled similarly to the new BoE website |
+| Grey dark | Demonstrates use of inverted dark colour schemes |
+| OneNote | Styled similarly to the OneNote application |
+| Poor man's Flatly | Poor man's version of the <a href="https://bootswatch.com/flatly/" target="_blank">Flatly</a> theme (the original is used for this document)|
+
+
+## Theme screenshots
+
+<!-- full  -->
+
+### Blue gradient
+<a href="https://ibb.co/mtempw" target="_blank"><img src="https://preview.ibb.co/dAgz9w/blue_gradient_round.png" alt="blue_gradient_round" border="0"></a>
+<br>
+
+### BoE website
+<a href="https://ibb.co/cOcvhG" target="_blank"><img src="https://preview.ibb.co/kysjbb/boe_website.png" alt="boe_website" border="0"></a>
+<br>
+
+### Grey dark
+<a href="https://ibb.co/iSpmpw" target="_blank"><img src="https://preview.ibb.co/nBagNG/grey_dark.png" alt="grey_dark" border="0"></a>
+<br>
+
+### OneNote
+<a href="https://ibb.co/ngL4bb" target="_blank"><img src="https://preview.ibb.co/h3YPbb/onenote.png" alt="onenote" border="0"></a>
+<br>
+
+### Poor man's Flatly
+<a href="https://ibb.co/buxT2G" target="_blank"><img src="https://preview.ibb.co/iEmMNG/poor_mans_flatly.png" alt="poor_mans_flatly" border="0"></a><br />
+<br>
+
+## Known issues
+  
+Some application components have not been fully customised:
+
+- Action button when pressed
+
+- Sidebar search box when pressed
+
+- Dropdown menu background
+
+- Popup menu and placeholder font colour in date inputs
+
+- Checkbox and radio buttons
+
+- Info box icon corners
+
+
+
