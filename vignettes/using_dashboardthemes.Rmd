@@ -268,15 +268,15 @@ Example of creating a custom logo object. Each parameter can be changed as requi
 Several themes have been created using the new functionality:
 
 
-| Theme          | Description                        |
-| ------------------ |-----------------------------------------------|
-| Blue gradient | Demonstrates use of gradients, shadows and rounded corners |
-| BoE website | Styled similarly to the new BoE website |
-| Grey light | Simple, light theme using a grey colour schemes |
-| Grey dark | Demonstrates use of inverted dark colour schemes |
-| OneNote | Styled similarly to the OneNote application |
-| Poor man's Flatly | Poor man's version of the <a href="https://bootswatch.com/flatly/" target="_blank">Flatly</a> theme
-| Purple gradient | Demonstrates high use of gradients and a smaller sidebar |
+| Theme          | Code | Description                        |
+| ------------------ |------------|-----------------------------------------------|
+| Blue gradient | blue_gradient | Demonstrates use of gradients, shadows and rounded corners |
+| BoE website | boe_website | Styled similarly to the new BoE website |
+| Grey light | grey_light | Simple, light theme using a grey colour schemes |
+| Grey dark | grey_dark | Demonstrates use of inverted dark colour schemes |
+| OneNote | onenote | Styled similarly to the OneNote application |
+| Poor man's Flatly | poor_mans_flatly | Poor man's version of the <a href="https://bootswatch.com/flatly/" target="_blank">Flatly</a> theme
+| Purple gradient | purple_gradient | Demonstrates high use of gradients and a smaller sidebar |
 
 
 ## Theme screenshots
