@@ -16,6 +16,10 @@ An R package designed to provide enhanced theme options for Shinydashboard appli
 
 - Use of live theme switchers in apps (implemented in testing, to be added in package).
   
+  
+## Disclaimer
+This is not part of the official Shinydashboard package and is released as a separate set of functionality.  Efforts will be made to ensure compatibility with future versions of Shinydashboard but there could be delays in doing so. As such, dashboardthemes should be treated as an experimental package and used at your own risk.
+
 
 ## Installation
 
@@ -23,6 +27,7 @@ An R package designed to provide enhanced theme options for Shinydashboard appli
 library(devtools)
 install_github("nik01010/dashboardthemes")
 ```
+
 
 ## Functions
 
