@@ -23,9 +23,11 @@ shinyDashboardThemeDIY(appFontFamily, appFontColor, logoBackColor,
   tabBoxTabTextColorSelected, tabBoxBackColor, tabBoxHighlightColor,
   tabBoxBorderRadius, buttonBackColor, buttonTextColor, buttonBorderColor,
   buttonBorderRadius, buttonBackColorHover, buttonTextColorHover,
-  buttonBorderColorHover, textboxBackColor, textboxBorderColor,
-  textboxBorderRadius, textboxBackColorSelect, textboxBorderColorSelect,
-  tableBackColor, tableBorderColor, tableBorderTopSize, tableBorderRowSize)
+  buttonBorderColorHover, buttonHeight = 34, buttonPadding = "6px 12px",
+  textboxBackColor, textboxBorderColor, textboxBorderRadius,
+  textboxBackColorSelect, textboxBorderColorSelect, textboxHeight = 34,
+  textboxPadding = "6px 12px", tableBackColor, tableBorderColor,
+  tableBorderTopSize, tableBorderRowSize)
 }
 \arguments{
 \item{appFontFamily}{String. Application font.}
@@ -148,6 +150,10 @@ shinyDashboardThemeDIY(appFontFamily, appFontColor, logoBackColor,
 
 \item{buttonBorderColorHover}{String. Button border line colour: hovered.}
 
+\item{buttonHeight}{Numeric. Button shape height. Defaults to 34.}
+
+\item{buttonPadding}{String. Button label padding. Defaults to "6px 12px".}
+
 \item{textboxBackColor}{String. Textbox background colour.}
 
 \item{textboxBorderColor}{String. Textbox border line colour.}
@@ -157,6 +163,10 @@ shinyDashboardThemeDIY(appFontFamily, appFontColor, logoBackColor,
 \item{textboxBackColorSelect}{String. Textbox background colour: selected.}
 
 \item{textboxBorderColorSelect}{String. Textbox border line colour: selected.}
+
+\item{textboxHeight}{Numeric. Textbox shape height. Defaults to 34.}
+
+\item{textboxPadding}{String. Textbox text padding. Defaults to "6px 12px".}
 
 \item{tableBackColor}{String. Table background colour.}
 

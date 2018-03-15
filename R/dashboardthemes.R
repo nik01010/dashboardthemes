@@ -398,11 +398,15 @@ shinyDashboardLogo <- function(theme){
 #' @param buttonBackColorHover String. Button background colour: hovered.
 #' @param buttonTextColorHover String. Button font colour: hovered.
 #' @param buttonBorderColorHover String. Button border line colour: hovered.
+#' @param buttonHeight Numeric. Button shape height. Defaults to 34.
+#' @param buttonPadding String. Button label padding. Defaults to "6px 12px".
 #' @param textboxBackColor String. Textbox background colour.
 #' @param textboxBorderColor String. Textbox border line colour.
 #' @param textboxBorderRadius Numeric. Textbox shape radius.
 #' @param textboxBackColorSelect String. Textbox background colour: selected.
 #' @param textboxBorderColorSelect String. Textbox border line colour: selected.
+#' @param textboxHeight Numeric. Textbox shape height. Defaults to 34.
+#' @param textboxPadding String. Textbox text padding. Defaults to "6px 12px".
 #' @param tableBackColor String. Table background colour.
 #' @param tableBorderColor String. Table border line colour.
 #' @param tableBorderTopSize Numeric. Table header line size.
@@ -543,8 +547,9 @@ shinyDashboardThemeDIY <- function(appFontFamily, appFontColor, logoBackColor, b
                                    boxShadowSize, boxShadowColor, boxTitleSize, boxDefaultColor, boxPrimaryColor, boxSuccessColor, boxWarningColor,
                                    boxDangerColor, tabBoxTabColor, tabBoxTabTextSize, tabBoxTabTextColor, tabBoxTabTextColorSelected, tabBoxBackColor,
                                    tabBoxHighlightColor, tabBoxBorderRadius, buttonBackColor, buttonTextColor, buttonBorderColor, buttonBorderRadius,
-                                   buttonBackColorHover, buttonTextColorHover, buttonBorderColorHover, textboxBackColor, textboxBorderColor,
-                                   textboxBorderRadius, textboxBackColorSelect, textboxBorderColorSelect, tableBackColor, tableBorderColor,
+                                   buttonBackColorHover, buttonTextColorHover, buttonBorderColorHover, buttonHeight = 34, buttonPadding = "6px 12px",
+                                   textboxBackColor, textboxBorderColor, textboxBorderRadius, textboxBackColorSelect, textboxBorderColorSelect,
+                                   textboxHeight = 34, textboxPadding = "6px 12px", tableBackColor, tableBorderColor,
                                    tableBorderTopSize, tableBorderRowSize) {
 
 
@@ -874,6 +879,8 @@ shinyDashboardThemeDIY <- function(appFontFamily, appFontColor, logoBackColor, b
             color: ', buttonTextColor, ';
             border-color: ', buttonBorderColor, ';
             border-radius: ', buttonBorderRadius, 'px;
+            height: ', buttonHeight, 'px;
+            padding: ', buttonPadding, ';
           }
 
           /* button: hover */
@@ -910,6 +917,9 @@ shinyDashboardThemeDIY <- function(appFontFamily, appFontColor, logoBackColor, b
             color: ', appFontColor, ';
             border-color: ', textboxBorderColor, ';
             border-radius: ', textboxBorderRadius, 'px;
+            height: ', textboxHeight, 'px;
+            min-height: ', textboxHeight, 'px;
+            padding: ', textboxPadding, ';
           }
 
           /* textbox: selected */
@@ -1019,6 +1029,13 @@ shinyDashboardThemeDIY <- function(appFontFamily, appFontColor, logoBackColor, b
             color: ', appFontColor, ' !important;
           }
 
+          /* datatable search box */
+          .dataTables_wrapper .dataTables_filter input {
+            background-color: ', textboxBackColor, ';
+            border: 1px solid ', textboxBorderColor, ';
+            border-radius: ', textboxBorderRadius, 'px;
+          }
+
           /* notification and progress bar */
           .progress-bar {
             background-color: ', boxSuccessColor, ';
@@ -1037,6 +1054,19 @@ shinyDashboardThemeDIY <- function(appFontFamily, appFontColor, logoBackColor, b
           /* horizontal divider line */
           hr {
             border-top: 1px solid rgb(215,215,215);
+          }
+
+          /* modal */
+          .modal-body {
+            background-color: ', boxBackColor, ';
+          }
+
+          .modal-footer {
+            background-color: ', boxBackColor, ';
+          }
+
+          .modal-header {
+            background-color: ', boxBackColor, ';
           }
 
           '
