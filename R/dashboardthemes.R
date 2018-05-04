@@ -917,7 +917,6 @@ shinyDashboardThemeDIY <- function(appFontFamily, appFontColor, logoBackColor, b
             color: ', appFontColor, ';
             border-color: ', textboxBorderColor, ';
             border-radius: ', textboxBorderRadius, 'px;
-            height: ', textboxHeight, 'px;
             min-height: ', textboxHeight, 'px;
             padding: ', textboxPadding, ';
           }
