@@ -1,5 +1,9 @@
 ### dashboardthemes ----------------------------------------
 
+### v1.0.2
+* Fixed small bug when viewing dashboards at smartphone screen resolution - first sidebar tab link was hidden.
+
+
 ### v1.0.1
 * By request: Added support for changing textbox/dropdown/button height and padding.
   Four new optional arguments were added to shinyDashboardThemeDIY: 
