@@ -612,7 +612,7 @@ shinyDashboardThemeDIY <- function(appFontFamily, appFontColor, logoBackColor, b
             box-shadow: ', sidebarShadowRadius, " ", sidebarShadowColor, ';
             padding-left: ', sidebarPadding, 'px;
             padding-right: ', sidebarPadding, 'px;
-            padding-top: 60px;
+            /* padding-top: 60px; */
           }
 
           /* sidebar menu */

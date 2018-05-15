@@ -1,4 +1,4 @@
-### dashboard themes -------------------------------------
+### dashboardthemes ----------------------------------------
 
 ### v1.0.1
 * By request: Added support for changing textbox/dropdown/button height and padding.
