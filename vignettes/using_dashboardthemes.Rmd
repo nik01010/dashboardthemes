@@ -110,6 +110,10 @@ Example of creating a custom theme object. Each parameter can be changed as requ
     ### general
     appFontFamily = "Arial"
     ,appFontColor = "rgb(0,0,0)"
+    ,primaryFontColor = "rgb(0,0,0)"
+    ,successFontColor = "rgb(0,0,0)"
+    ,warningFontColor = "rgb(0,0,0)"
+    ,dangerFontColor = "rgb(0,0,0)"
     ,bodyBackColor = "rgb(248,248,248)"
   
     ### header
