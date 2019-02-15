@@ -27,7 +27,9 @@ shinyDashboardThemeDIY(appFontFamily, appFontColor, logoBackColor,
   textboxBackColor, textboxBorderColor, textboxBorderRadius,
   textboxBackColorSelect, textboxBorderColorSelect, textboxHeight = 34,
   textboxPadding = "6px 12px", tableBackColor, tableBorderColor,
-  tableBorderTopSize, tableBorderRowSize)
+  tableBorderTopSize, tableBorderRowSize, primaryFontColor = "auto",
+  successFontColor = "auto", warningFontColor = "auto",
+  dangerFontColor = "auto")
 }
 \arguments{
 \item{appFontFamily}{String. Application font.}
@@ -175,6 +177,14 @@ shinyDashboardThemeDIY(appFontFamily, appFontColor, logoBackColor,
 \item{tableBorderTopSize}{Numeric. Table header line size.}
 
 \item{tableBorderRowSize}{Numeric. Table row separator line size.}
+
+\item{primaryFontColor}{String. Primary status highlight font colour.}
+
+\item{successFontColor}{String. Success status highlight font colour.}
+
+\item{warningFontColor}{String. Warning status highlight font colour.}
+
+\item{dangerFontColor}{String. Danger status highlight font colour.}
 }
 \value{
 HTML code. Theme for a shinydashboard application.
@@ -188,6 +198,10 @@ theme_blue_gradient <- shinyDashboardThemeDIY(
   ### general
   appFontFamily = "Arial"
   ,appFontColor = "rgb(0,0,0)"
+  ,primaryFontColor = "rgb(0,0,0)"
+  ,successFontColor = "rgb(0,0,0)"
+  ,warningFontColor = "rgb(0,0,0)"
+  ,dangerFontColor = "rgb(0,0,0)"
   ,bodyBackColor = "rgb(248,248,248)"
 
   ### header
