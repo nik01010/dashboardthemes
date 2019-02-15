@@ -4,7 +4,7 @@
 ###
 ### Contact:        Nik Lilovski (nik.lilovski@outlook.com)
 ###
-### Last updated:   04 March 2018
+### Last updated:   15 February 2019
 ###
 #' dashboardthemes: a package for custom themes in shinydashboard applications
 #'
@@ -340,6 +340,10 @@ shinyDashboardLogo <- function(theme){
 #'
 #' @param appFontFamily String. Application font.
 #' @param appFontColor String. Application font colour.
+#' @param primaryFontColor String. Primary status highlight font colour.
+#' @param successFontColor String. Success status highlight font colour.
+#' @param warningFontColor String. Warning status highlight font colour.
+#' @param dangerFontColor String. Danger status highlight font colour.
 #' @param bodyBackColor String. Main page background colour.
 #' @param logoBackColor String. Logo background colour.
 #' @param headerButtonBackColor String. Sidebar toggle button background colour.
@@ -419,6 +423,10 @@ shinyDashboardLogo <- function(theme){
 #'   ### general
 #'   appFontFamily = "Arial"
 #'   ,appFontColor = "rgb(0,0,0)"
+#'   ,primaryFontColor = "rgb(0,0,0)"
+#'   ,successFontColor = "rgb(0,0,0)"
+#'   ,warningFontColor = "rgb(0,0,0)"
+#'   ,dangerFontColor = "rgb(0,0,0)"
 #'   ,bodyBackColor = "rgb(248,248,248)"
 #'
 #'   ### header
@@ -536,22 +544,24 @@ shinyDashboardLogo <- function(theme){
 #' )
 #' @seealso \code{\link{shinyDashboardThemes}, \link{shinyDashboardLogoDIY}, \link{cssGradientThreeColors}}
 #' @export
-shinyDashboardThemeDIY <- function(appFontFamily, appFontColor, logoBackColor, bodyBackColor, headerButtonBackColor, headerButtonIconColor,
-                                   headerButtonBackColorHover, headerButtonIconColorHover, headerBackColor, headerBoxShadowColor,
-                                   headerBoxShadowSize, sidebarBackColor, sidebarPadding, sidebarShadowRadius, sidebarShadowColor,
-                                   sidebarMenuBackColor, sidebarMenuPadding, sidebarMenuBorderRadius, sidebarUserTextColor, sidebarSearchBackColor,
-                                   sidebarSearchIconColor, sidebarSearchBorderColor,  sidebarTabTextColor, sidebarTabTextSize, sidebarTabBorderStyle,
-                                   sidebarTabBorderColor, sidebarTabBorderWidth, sidebarTabBackColorSelected, sidebarTabTextColorSelected,
-                                   sidebarTabRadiusSelected, sidebarTabTextColorHover, sidebarTabBackColorHover, sidebarTabBorderStyleHover,
-                                   sidebarTabBorderColorHover, sidebarTabBorderWidthHover, sidebarTabRadiusHover, boxBackColor, boxBorderRadius,
-                                   boxShadowSize, boxShadowColor, boxTitleSize, boxDefaultColor, boxPrimaryColor, boxSuccessColor, boxWarningColor,
-                                   boxDangerColor, tabBoxTabColor, tabBoxTabTextSize, tabBoxTabTextColor, tabBoxTabTextColorSelected, tabBoxBackColor,
-                                   tabBoxHighlightColor, tabBoxBorderRadius, buttonBackColor, buttonTextColor, buttonBorderColor, buttonBorderRadius,
-                                   buttonBackColorHover, buttonTextColorHover, buttonBorderColorHover, buttonHeight = 34, buttonPadding = "6px 12px",
-                                   textboxBackColor, textboxBorderColor, textboxBorderRadius, textboxBackColorSelect, textboxBorderColorSelect,
-                                   textboxHeight = 34, textboxPadding = "6px 12px", tableBackColor, tableBorderColor,
-                                   tableBorderTopSize, tableBorderRowSize) {
-
+shinyDashboardThemeDIY <- function(
+    appFontFamily, appFontColor, logoBackColor, bodyBackColor, headerButtonBackColor, headerButtonIconColor,
+    headerButtonBackColorHover, headerButtonIconColorHover, headerBackColor, headerBoxShadowColor,
+    headerBoxShadowSize, sidebarBackColor, sidebarPadding, sidebarShadowRadius, sidebarShadowColor,
+    sidebarMenuBackColor, sidebarMenuPadding, sidebarMenuBorderRadius, sidebarUserTextColor, sidebarSearchBackColor,
+    sidebarSearchIconColor, sidebarSearchBorderColor,  sidebarTabTextColor, sidebarTabTextSize, sidebarTabBorderStyle,
+    sidebarTabBorderColor, sidebarTabBorderWidth, sidebarTabBackColorSelected, sidebarTabTextColorSelected,
+    sidebarTabRadiusSelected, sidebarTabTextColorHover, sidebarTabBackColorHover, sidebarTabBorderStyleHover,
+    sidebarTabBorderColorHover, sidebarTabBorderWidthHover, sidebarTabRadiusHover, boxBackColor, boxBorderRadius,
+    boxShadowSize, boxShadowColor, boxTitleSize, boxDefaultColor, boxPrimaryColor, boxSuccessColor, boxWarningColor,
+    boxDangerColor, tabBoxTabColor, tabBoxTabTextSize, tabBoxTabTextColor, tabBoxTabTextColorSelected, tabBoxBackColor,
+    tabBoxHighlightColor, tabBoxBorderRadius, buttonBackColor, buttonTextColor, buttonBorderColor, buttonBorderRadius,
+    buttonBackColorHover, buttonTextColorHover, buttonBorderColorHover, buttonHeight = 34, buttonPadding = "6px 12px",
+    textboxBackColor, textboxBorderColor, textboxBorderRadius, textboxBackColorSelect, textboxBorderColorSelect,
+    textboxHeight = 34, textboxPadding = "6px 12px", tableBackColor, tableBorderColor,
+    tableBorderTopSize, tableBorderRowSize, primaryFontColor = "auto", successFontColor = "auto",
+    warningFontColor = "auto", dangerFontColor = "auto"
+) {
 
   htmltools::tags$head(
 
@@ -810,8 +820,8 @@ shinyDashboardThemeDIY <- function(appFontFamily, appFontColor, logoBackColor, b
           }
 
           /* box: primary color */
-          .box.box-solid.box-primary>.box-header, .box.box-primary>.box-header {
-            color: ', appFontColor, ';
+          .box.box-solid.box-primary>.box-header h3, .box.box-primary>.box-header h3 {
+            color: ', primaryFontColor, ';
           }
           .box.box-solid.box-primary>.box-header {
             background: ', boxPrimaryColor, ';
@@ -826,8 +836,8 @@ shinyDashboardThemeDIY <- function(appFontFamily, appFontColor, logoBackColor, b
           }
 
           /* box: success color */
-          .box.box-solid.box-success>.box-header, .box.box-success>.box-header {
-            color: ', appFontColor, ';
+          .box.box-solid.box-success>.box-header h3, .box.box-success>.box-header h3 {
+            color: ', successFontColor, ';
           }
           .box.box-solid.box-success>.box-header {
             background: ', boxSuccessColor, ';
@@ -842,8 +852,8 @@ shinyDashboardThemeDIY <- function(appFontFamily, appFontColor, logoBackColor, b
           }
 
           /* box: warning color */
-          .box.box-solid.box-warning>.box-header, .box.box-warning>.box-header {
-            color: ', appFontColor, ';
+          .box.box-solid.box-warning>.box-header h3, .box.box-warning>.box-header h3 {
+            color: ', warningFontColor, ';
           }
           .box.box-solid.box-warning>.box-header {
             background: ', boxWarningColor, ';
@@ -858,8 +868,8 @@ shinyDashboardThemeDIY <- function(appFontFamily, appFontColor, logoBackColor, b
           }
 
           /* box: danger color */
-          .box.box-solid.box-danger>.box-header, .box.box-danger>.box-header {
-            color: ', appFontColor, ';
+          .box.box-solid.box-danger>.box-header h3, .box.box-danger>.box-header h3 {
+            color: ', dangerFontColor, ';
           }
           .box.box-solid.box-danger>.box-header {
             background: ', boxDangerColor, ';
@@ -1276,6 +1286,10 @@ theme_blue_gradient <- shinyDashboardThemeDIY(
   ### general
   appFontFamily = "Arial"
   ,appFontColor = "rgb(0,0,0)"
+  ,primaryFontColor = "rgb(0,0,0)"
+  ,successFontColor = "rgb(0,0,0)"
+  ,warningFontColor = "rgb(0,0,0)"
+  ,dangerFontColor = "rgb(0,0,0)"
   ,bodyBackColor = "rgb(248,248,248)"
 
   ### header
@@ -1400,6 +1414,10 @@ theme_boe_website <- shinyDashboardThemeDIY(
   ### general
   appFontFamily = "Arial"
   ,appFontColor = "rgb(42,102,98)"
+  ,primaryFontColor = "rgb(0,0,0)"
+  ,successFontColor = "rgb(0,0,0)"
+  ,warningFontColor = "rgb(0,0,0)"
+  ,dangerFontColor = "rgb(0,0,0)"
   ,bodyBackColor = "rgb(255,255,254)"
 
   ### header
@@ -1500,6 +1518,10 @@ theme_grey_light <- shinyDashboardThemeDIY(
   ### general
   appFontFamily = "Arial"
   ,appFontColor = "rgb(45,45,45)"
+  ,primaryFontColor = "rgb(15,15,15)"
+  ,successFontColor = "rgb(15,15,15)"
+  ,warningFontColor = "rgb(15,15,15)"
+  ,dangerFontColor = "rgb(15,15,15)"
   ,bodyBackColor = "rgb(240,240,240)"
 
   ### header
@@ -1599,6 +1621,10 @@ theme_grey_dark <- shinyDashboardThemeDIY(
   ### general
   appFontFamily = "Arial"
   ,appFontColor = "rgb(205,205,205)"
+  ,primaryFontColor = "rgb(255,255,255)"
+  ,successFontColor = "rgb(255,255,255)"
+  ,warningFontColor = "rgb(255,255,255)"
+  ,dangerFontColor = "rgb(255,255,255)"
   ,bodyBackColor = "rgb(45,55,65)"
 
   ### header
@@ -1699,6 +1725,10 @@ theme_onenote <- shinyDashboardThemeDIY(
   ### general
   appFontFamily = "Arial"
   ,appFontColor = "rgb(0,0,0)"
+  ,primaryFontColor = "rgb(0,0,0)"
+  ,successFontColor = "rgb(0,0,0)"
+  ,warningFontColor = "rgb(0,0,0)"
+  ,dangerFontColor = "rgb(0,0,0)"
   ,bodyBackColor = "rgb(255,255,255)"
 
   ### header
@@ -1823,6 +1853,10 @@ theme_poor_mans_flatly <- shinyDashboardThemeDIY(
   ### general
   appFontFamily = "Arial"
   ,appFontColor = "rgb(33,37,41)"
+  ,primaryFontColor = "rgb(245,245,245)"
+  ,successFontColor = "rgb(33,37,41)"
+  ,warningFontColor = "rgb(33,37,41)"
+  ,dangerFontColor = "rgb(33,37,41)"
   ,bodyBackColor = "rgb(255,255,255)"
 
   ### header
@@ -1923,6 +1957,10 @@ theme_purple_gradient <- shinyDashboardThemeDIY(
   ### general
   appFontFamily = "Arial"
   ,appFontColor = "rgb(128,177,221)"
+  ,primaryFontColor = "rgb(255,255,255)"
+  ,successFontColor = "rgb(255,255,255)"
+  ,warningFontColor = "rgb(255,255,255)"
+  ,dangerFontColor = "rgb(255,255,255)"
   ,bodyBackColor = cssGradientThreeColors(
     direction = "down"
     ,colorStart = "rgb(49,56,107)"
