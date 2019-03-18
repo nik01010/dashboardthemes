@@ -1,5 +1,10 @@
 ### dashboardthemes ----------------------------------------
 
+### v1.0.3
+* Added option to change Primary/Success/Warning/Danger status highlight font colour.
+* Enables better visibility of header titles in boxes that use a specific status.
+* Updated all theme options with a status highlight font colour.
+
 ### v1.0.2
 * Fixed small bug when viewing dashboards at smartphone screen resolution - first sidebar tab link was hidden.
 

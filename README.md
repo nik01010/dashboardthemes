@@ -14,7 +14,7 @@ An experimental R package to provide custom theme options for Shinydashboard app
 
 - Easy creation of new themes and logos, without knowledge of CSS code.
 
-- Use of live theme switchers in apps (implemented in testing, to be added in package).
+- Use of live theme switchers in apps (<a href="https://github.com/nik01010/dashboardThemeSwitcher" target="_blank">Guide available here</a>).
   
   
 ## Disclaimer
@@ -121,6 +121,10 @@ Example of creating a custom theme object. Each parameter can be changed as requ
     ### general
     appFontFamily = "Arial"
     ,appFontColor = "rgb(0,0,0)"
+    ,primaryFontColor = "rgb(0,0,0)"
+    ,successFontColor = "rgb(0,0,0)"
+    ,warningFontColor = "rgb(0,0,0)"
+    ,dangerFontColor = "rgb(0,0,0)"
     ,bodyBackColor = "rgb(248,248,248)"
   
     ### header
