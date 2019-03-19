@@ -4,7 +4,7 @@
 ###
 ### Contact:        Nik Lilovski (nik.lilovski@outlook.com)
 ###
-### Last updated:   15 February 2019
+### Last updated:   19 March 2019
 ###
 #' dashboardthemes: a package for custom themes in shinydashboard applications
 #'
@@ -265,7 +265,7 @@ shinyDashboardLogoDIY <- function(boldText, mainText, textSize = 15, badgeText, 
 
       <font color=\"", badgeTextColor, "\" size=\"", badgeTextSize, "\">",
 
-      badgeText ,"  </font> &nbsp; </span> <body> </p>"
+      badgeText ,"  </font> &nbsp; </span> </p>"
 
     )
 
@@ -341,6 +341,7 @@ shinyDashboardLogo <- function(theme){
 #' @param appFontFamily String. Application font.
 #' @param appFontColor String. Application font colour.
 #' @param primaryFontColor String. Primary status highlight font colour.
+#' @param infoFontColor String. Info status highlight font colour.
 #' @param successFontColor String. Success status highlight font colour.
 #' @param warningFontColor String. Warning status highlight font colour.
 #' @param dangerFontColor String. Danger status highlight font colour.
@@ -385,6 +386,7 @@ shinyDashboardLogo <- function(theme){
 #' @param boxTitleSize Numeric. Box title font size.
 #' @param boxDefaultColor String. Box default highlight colour.
 #' @param boxPrimaryColor String. Box primary highlight colour.
+#' @param boxInfoColor String. Box info highlight colour.
 #' @param boxSuccessColor String. Box success highlight colour.
 #' @param boxWarningColor String. Box warning highlight colour.
 #' @param boxDangerColor String. Box danger highlight colour.
@@ -424,6 +426,7 @@ shinyDashboardLogo <- function(theme){
 #'   appFontFamily = "Arial"
 #'   ,appFontColor = "rgb(0,0,0)"
 #'   ,primaryFontColor = "rgb(0,0,0)"
+#'   ,infoFontColor = "rgb(0,0,0)"
 #'   ,successFontColor = "rgb(0,0,0)"
 #'   ,warningFontColor = "rgb(0,0,0)"
 #'   ,dangerFontColor = "rgb(0,0,0)"
@@ -507,6 +510,7 @@ shinyDashboardLogo <- function(theme){
 #'   ,boxTitleSize = 16
 #'   ,boxDefaultColor = "rgb(210,214,220)"
 #'   ,boxPrimaryColor = "rgba(44,222,235,1)"
+#'   ,boxInfoColor = "rgb(210,214,220)"
 #'   ,boxSuccessColor = "rgba(0,255,213,1)"
 #'   ,boxWarningColor = "rgb(244,156,104)"
 #'   ,boxDangerColor = "rgb(255,88,55)"
@@ -560,7 +564,7 @@ shinyDashboardThemeDIY <- function(
     textboxBackColor, textboxBorderColor, textboxBorderRadius, textboxBackColorSelect, textboxBorderColorSelect,
     textboxHeight = 34, textboxPadding = "6px 12px", tableBackColor, tableBorderColor,
     tableBorderTopSize, tableBorderRowSize, primaryFontColor = "auto", successFontColor = "auto",
-    warningFontColor = "auto", dangerFontColor = "auto"
+    warningFontColor = "auto", dangerFontColor = "auto", infoFontColor = "auto", boxInfoColor = "auto"
 ) {
 
   htmltools::tags$head(
@@ -817,6 +821,22 @@ shinyDashboardThemeDIY <- function(
           .box.box-solid, .box {
             border-radius: ', boxBorderRadius, 'px;
             border-top-color: ', boxDefaultColor, ';
+          }
+
+          /* box: info color */
+          .box.box-solid.box-info>.box-header h3, .box.box-info>.box-header h3 {
+            color: ', infoFontColor, ';
+          }
+          .box.box-solid.box-info>.box-header {
+            background: ', boxInfoColor, ';
+            border-radius: ', boxBorderRadius, 'px;
+          }
+          .box.box-solid.box-info, .box.box-info {
+            border-color: ', boxInfoColor, ';
+            border-left-color: ', boxInfoColor, ';
+            border-right-color: ', boxInfoColor, ';
+            border-top-color: ', boxInfoColor, ';
+            border-radius: ', boxBorderRadius, 'px;
           }
 
           /* box: primary color */
@@ -1287,6 +1307,7 @@ theme_blue_gradient <- shinyDashboardThemeDIY(
   appFontFamily = "Arial"
   ,appFontColor = "rgb(0,0,0)"
   ,primaryFontColor = "rgb(0,0,0)"
+  ,infoFontColor = "rgb(0,0,0)"
   ,successFontColor = "rgb(0,0,0)"
   ,warningFontColor = "rgb(0,0,0)"
   ,dangerFontColor = "rgb(0,0,0)"
@@ -1370,6 +1391,7 @@ theme_blue_gradient <- shinyDashboardThemeDIY(
   ,boxTitleSize = 16
   ,boxDefaultColor = "rgb(210,214,220)"
   ,boxPrimaryColor = "rgba(44,222,235,1)"
+  ,boxInfoColor = "rgb(210,214,220)"
   ,boxSuccessColor = "rgba(0,255,213,1)"
   ,boxWarningColor = "rgb(244,156,104)"
   ,boxDangerColor = "rgb(255,88,55)"
@@ -1415,6 +1437,7 @@ theme_boe_website <- shinyDashboardThemeDIY(
   appFontFamily = "Arial"
   ,appFontColor = "rgb(42,102,98)"
   ,primaryFontColor = "rgb(0,0,0)"
+  ,infoFontColor = "rgb(0,0,0)"
   ,successFontColor = "rgb(0,0,0)"
   ,warningFontColor = "rgb(0,0,0)"
   ,dangerFontColor = "rgb(0,0,0)"
@@ -1474,6 +1497,7 @@ theme_boe_website <- shinyDashboardThemeDIY(
   ,boxTitleSize = 18
   ,boxDefaultColor = "rgb(248,248,248)"
   ,boxPrimaryColor = "rgb(15,124,191)"
+  ,boxInfoColor = "rgb(225,225,225)"
   ,boxSuccessColor = "rgb(59,133,95)"
   ,boxWarningColor = "rgb(178,83,149)"
   ,boxDangerColor = "rgb(207,57,92)"
@@ -1519,6 +1543,7 @@ theme_grey_light <- shinyDashboardThemeDIY(
   appFontFamily = "Arial"
   ,appFontColor = "rgb(45,45,45)"
   ,primaryFontColor = "rgb(15,15,15)"
+  ,infoFontColor = "rgb(15,15,15)"
   ,successFontColor = "rgb(15,15,15)"
   ,warningFontColor = "rgb(15,15,15)"
   ,dangerFontColor = "rgb(15,15,15)"
@@ -1577,6 +1602,7 @@ theme_grey_light <- shinyDashboardThemeDIY(
   ,boxTitleSize = 18
   ,boxDefaultColor = "rgb(225,225,225)"
   ,boxPrimaryColor = "rgb(95,155,213)"
+  ,boxInfoColor = "rgb(180,180,180)"
   ,boxSuccessColor = "rgb(112,173,71)"
   ,boxWarningColor = "rgb(237,125,49)"
   ,boxDangerColor = "rgb(232,76,34)"
@@ -1622,6 +1648,7 @@ theme_grey_dark <- shinyDashboardThemeDIY(
   appFontFamily = "Arial"
   ,appFontColor = "rgb(205,205,205)"
   ,primaryFontColor = "rgb(255,255,255)"
+  ,infoFontColor = "rgb(255,255,255)"
   ,successFontColor = "rgb(255,255,255)"
   ,warningFontColor = "rgb(255,255,255)"
   ,dangerFontColor = "rgb(255,255,255)"
@@ -1681,6 +1708,7 @@ theme_grey_dark <- shinyDashboardThemeDIY(
   ,boxTitleSize = 16
   ,boxDefaultColor = "rgb(52,62,72)"
   ,boxPrimaryColor = "rgb(200,200,200)"
+  ,boxInfoColor = "rgb(80,95,105)"
   ,boxSuccessColor = "rgb(155,240,80)"
   ,boxWarningColor = "rgb(240,80,210)"
   ,boxDangerColor = "rgb(240,80,80)"
@@ -1726,6 +1754,7 @@ theme_onenote <- shinyDashboardThemeDIY(
   appFontFamily = "Arial"
   ,appFontColor = "rgb(0,0,0)"
   ,primaryFontColor = "rgb(0,0,0)"
+  ,infoFontColor = "rgb(0,0,0)"
   ,successFontColor = "rgb(0,0,0)"
   ,warningFontColor = "rgb(0,0,0)"
   ,dangerFontColor = "rgb(0,0,0)"
@@ -1809,6 +1838,7 @@ theme_onenote <- shinyDashboardThemeDIY(
   ,boxTitleSize = 18
   ,boxDefaultColor = "rgb(225,225,225)"
   ,boxPrimaryColor = "rgb(95,155,213)"
+  ,boxInfoColor = "rgb(235,235,235)"
   ,boxSuccessColor = "rgb(112,173,71)"
   ,boxWarningColor = "rgb(237,125,49)"
   ,boxDangerColor = "rgb(232,76,34)"
@@ -1854,6 +1884,7 @@ theme_poor_mans_flatly <- shinyDashboardThemeDIY(
   appFontFamily = "Arial"
   ,appFontColor = "rgb(33,37,41)"
   ,primaryFontColor = "rgb(245,245,245)"
+  ,infoFontColor = "rgb(245,245,245)"
   ,successFontColor = "rgb(33,37,41)"
   ,warningFontColor = "rgb(33,37,41)"
   ,dangerFontColor = "rgb(33,37,41)"
@@ -1913,6 +1944,7 @@ theme_poor_mans_flatly <- shinyDashboardThemeDIY(
   ,boxTitleSize = 19
   ,boxDefaultColor = "rgb(52,152,219)"
   ,boxPrimaryColor = "rgb(44,62,80)"
+  ,boxInfoColor = "rgb(52,152,219)"
   ,boxSuccessColor = "rgb(24, 188, 156)"
   ,boxWarningColor = "rgb(243,156,18)"
   ,boxDangerColor = "rgb(231,76,60)"
@@ -1958,6 +1990,7 @@ theme_purple_gradient <- shinyDashboardThemeDIY(
   appFontFamily = "Arial"
   ,appFontColor = "rgb(128,177,221)"
   ,primaryFontColor = "rgb(255,255,255)"
+  ,infoFontColor = "rgb(255,255,255)"
   ,successFontColor = "rgb(255,255,255)"
   ,warningFontColor = "rgb(255,255,255)"
   ,dangerFontColor = "rgb(255,255,255)"
@@ -2065,6 +2098,7 @@ theme_purple_gradient <- shinyDashboardThemeDIY(
   ,boxTitleSize = 16
   ,boxDefaultColor = "rgb(49,56,107)"
   ,boxPrimaryColor = "rgb(141,192,241)"
+  ,boxInfoColor = "rgb(20,100,160)"
   ,boxSuccessColor = "rgb(64,186,170)"
   ,boxWarningColor = "rgb(255,217,144)"
   ,boxDangerColor = "rgb(249,144,144)"
