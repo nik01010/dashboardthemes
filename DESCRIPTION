@@ -1,7 +1,7 @@
 Package: dashboardthemes
 Type: Package
 Title: Customise the appearance of Shiny dashboard applications using themes
-Version: 1.0.3
+Version: 1.0.4
 Authors@R: person("Nik", "Lilovski", email = "nik.lilovski@outlook.com",
                   role = c("aut", "cre"))
 Maintainer: Nik Lilovski <nik.lilovski@outlook.com>

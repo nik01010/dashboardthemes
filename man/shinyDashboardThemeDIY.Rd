@@ -29,7 +29,7 @@ shinyDashboardThemeDIY(appFontFamily, appFontColor, logoBackColor,
   textboxPadding = "6px 12px", tableBackColor, tableBorderColor,
   tableBorderTopSize, tableBorderRowSize, primaryFontColor = "auto",
   successFontColor = "auto", warningFontColor = "auto",
-  dangerFontColor = "auto")
+  dangerFontColor = "auto", infoFontColor = "auto", boxInfoColor = "auto")
 }
 \arguments{
 \item{appFontFamily}{String. Application font.}
@@ -185,6 +185,10 @@ shinyDashboardThemeDIY(appFontFamily, appFontColor, logoBackColor,
 \item{warningFontColor}{String. Warning status highlight font colour.}
 
 \item{dangerFontColor}{String. Danger status highlight font colour.}
+
+\item{infoFontColor}{String. Info status highlight font colour.}
+
+\item{boxInfoColor}{String. Box info highlight colour.}
 }
 \value{
 HTML code. Theme for a shinydashboard application.
@@ -199,6 +203,7 @@ theme_blue_gradient <- shinyDashboardThemeDIY(
   appFontFamily = "Arial"
   ,appFontColor = "rgb(0,0,0)"
   ,primaryFontColor = "rgb(0,0,0)"
+  ,infoFontColor = "rgb(0,0,0)"
   ,successFontColor = "rgb(0,0,0)"
   ,warningFontColor = "rgb(0,0,0)"
   ,dangerFontColor = "rgb(0,0,0)"
@@ -282,6 +287,7 @@ theme_blue_gradient <- shinyDashboardThemeDIY(
   ,boxTitleSize = 16
   ,boxDefaultColor = "rgb(210,214,220)"
   ,boxPrimaryColor = "rgba(44,222,235,1)"
+  ,boxInfoColor = "rgb(210,214,220)"
   ,boxSuccessColor = "rgba(0,255,213,1)"
   ,boxWarningColor = "rgb(244,156,104)"
   ,boxDangerColor = "rgb(255,88,55)"

@@ -106,11 +106,12 @@ Example of creating a custom theme object. Each parameter can be changed as requ
 
   ### creating custom theme object
   theme_blue_gradient <- shinyDashboardThemeDIY(
-
+  
     ### general
     appFontFamily = "Arial"
     ,appFontColor = "rgb(0,0,0)"
     ,primaryFontColor = "rgb(0,0,0)"
+    ,infoFontColor = "rgb(0,0,0)"
     ,successFontColor = "rgb(0,0,0)"
     ,warningFontColor = "rgb(0,0,0)"
     ,dangerFontColor = "rgb(0,0,0)"
@@ -194,6 +195,7 @@ Example of creating a custom theme object. Each parameter can be changed as requ
     ,boxTitleSize = 16
     ,boxDefaultColor = "rgb(210,214,220)"
     ,boxPrimaryColor = "rgba(44,222,235,1)"
+    ,boxInfoColor = "rgb(210,214,220)"
     ,boxSuccessColor = "rgba(0,255,213,1)"
     ,boxWarningColor = "rgb(244,156,104)"
     ,boxDangerColor = "rgb(255,88,55)"
