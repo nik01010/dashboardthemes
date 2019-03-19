@@ -265,7 +265,7 @@ shinyDashboardLogoDIY <- function(boldText, mainText, textSize = 15, badgeText, 
 
       <font color=\"", badgeTextColor, "\" size=\"", badgeTextSize, "\">",
 
-      badgeText ,"  </font> &nbsp; </span> <body> </p>"
+      badgeText ,"  </font> &nbsp; </span> </p>"
 
     )
 
