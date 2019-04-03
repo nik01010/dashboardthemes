@@ -5,7 +5,8 @@
 \title{Creates a custom logo object for a shinydashboard application}
 \usage{
 shinyDashboardLogoDIY(boldText, mainText, textSize = 15, badgeText,
-  badgeTextColor, badgeTextSize = 2, badgeBackColor, badgeBorderRadius = 3)
+  badgeTextColor, badgeTextSize = 2, badgeBackColor,
+  badgeBorderRadius = 3)
 }
 \arguments{
 \item{boldText}{String. Bold text for the logo.}
@@ -48,4 +49,3 @@ logo_blue_gradient <- shinyDashboardLogoDIY(
 \seealso{
 \code{\link{shinyDashboardLogo}, \link{cssGradientThreeColors}}
 }
-

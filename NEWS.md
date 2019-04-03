@@ -1,5 +1,9 @@
 ### dashboardthemes ----------------------------------------
 
+### v1.0.5
+* Fixed small bug with multi-line selectize drop-box height cutting off - now set to auto by default.
+
+
 ### v1.0.4
 * Added option to change Info font and box colour.
 * Removed incorrect body tag in shinyDashboardLogoDIY function.
