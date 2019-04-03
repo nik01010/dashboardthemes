@@ -7,29 +7,31 @@
 shinyDashboardThemeDIY(appFontFamily, appFontColor, logoBackColor,
   bodyBackColor, headerButtonBackColor, headerButtonIconColor,
   headerButtonBackColorHover, headerButtonIconColorHover, headerBackColor,
-  headerBoxShadowColor, headerBoxShadowSize, sidebarBackColor, sidebarPadding,
-  sidebarShadowRadius, sidebarShadowColor, sidebarMenuBackColor,
-  sidebarMenuPadding, sidebarMenuBorderRadius, sidebarUserTextColor,
-  sidebarSearchBackColor, sidebarSearchIconColor, sidebarSearchBorderColor,
-  sidebarTabTextColor, sidebarTabTextSize, sidebarTabBorderStyle,
-  sidebarTabBorderColor, sidebarTabBorderWidth, sidebarTabBackColorSelected,
-  sidebarTabTextColorSelected, sidebarTabRadiusSelected,
-  sidebarTabTextColorHover, sidebarTabBackColorHover,
-  sidebarTabBorderStyleHover, sidebarTabBorderColorHover,
-  sidebarTabBorderWidthHover, sidebarTabRadiusHover, boxBackColor,
-  boxBorderRadius, boxShadowSize, boxShadowColor, boxTitleSize, boxDefaultColor,
-  boxPrimaryColor, boxSuccessColor, boxWarningColor, boxDangerColor,
-  tabBoxTabColor, tabBoxTabTextSize, tabBoxTabTextColor,
-  tabBoxTabTextColorSelected, tabBoxBackColor, tabBoxHighlightColor,
-  tabBoxBorderRadius, buttonBackColor, buttonTextColor, buttonBorderColor,
-  buttonBorderRadius, buttonBackColorHover, buttonTextColorHover,
-  buttonBorderColorHover, buttonHeight = 34, buttonPadding = "6px 12px",
-  textboxBackColor, textboxBorderColor, textboxBorderRadius,
-  textboxBackColorSelect, textboxBorderColorSelect, textboxHeight = 34,
+  headerBoxShadowColor, headerBoxShadowSize, sidebarBackColor,
+  sidebarPadding, sidebarShadowRadius, sidebarShadowColor,
+  sidebarMenuBackColor, sidebarMenuPadding, sidebarMenuBorderRadius,
+  sidebarUserTextColor, sidebarSearchBackColor, sidebarSearchIconColor,
+  sidebarSearchBorderColor, sidebarTabTextColor, sidebarTabTextSize,
+  sidebarTabBorderStyle, sidebarTabBorderColor, sidebarTabBorderWidth,
+  sidebarTabBackColorSelected, sidebarTabTextColorSelected,
+  sidebarTabRadiusSelected, sidebarTabTextColorHover,
+  sidebarTabBackColorHover, sidebarTabBorderStyleHover,
+  sidebarTabBorderColorHover, sidebarTabBorderWidthHover,
+  sidebarTabRadiusHover, boxBackColor, boxBorderRadius, boxShadowSize,
+  boxShadowColor, boxTitleSize, boxDefaultColor, boxPrimaryColor,
+  boxSuccessColor, boxWarningColor, boxDangerColor, tabBoxTabColor,
+  tabBoxTabTextSize, tabBoxTabTextColor, tabBoxTabTextColorSelected,
+  tabBoxBackColor, tabBoxHighlightColor, tabBoxBorderRadius,
+  buttonBackColor, buttonTextColor, buttonBorderColor, buttonBorderRadius,
+  buttonBackColorHover, buttonTextColorHover, buttonBorderColorHover,
+  buttonHeight = 34, buttonPadding = "6px 12px", textboxBackColor,
+  textboxBorderColor, textboxBorderRadius, textboxBackColorSelect,
+  textboxBorderColorSelect, textboxHeight = 34,
   textboxPadding = "6px 12px", tableBackColor, tableBorderColor,
   tableBorderTopSize, tableBorderRowSize, primaryFontColor = "auto",
   successFontColor = "auto", warningFontColor = "auto",
-  dangerFontColor = "auto", infoFontColor = "auto", boxInfoColor = "auto")
+  dangerFontColor = "auto", infoFontColor = "auto",
+  boxInfoColor = "auto")
 }
 \arguments{
 \item{appFontFamily}{String. Application font.}
@@ -327,4 +329,3 @@ theme_blue_gradient <- shinyDashboardThemeDIY(
 \seealso{
 \code{\link{shinyDashboardThemes}, \link{shinyDashboardLogoDIY}, \link{cssGradientThreeColors}}
 }
-

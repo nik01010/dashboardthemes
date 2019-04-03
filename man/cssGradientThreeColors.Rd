@@ -4,8 +4,9 @@
 \alias{cssGradientThreeColors}
 \title{Generates CSS code for a gradient with three colors}
 \usage{
-cssGradientThreeColors(direction = "down", colorStart, colorMiddle, colorEnd,
-  colorStartPos = 0, colorMiddlePos = 50, colorEndPos = 100)
+cssGradientThreeColors(direction = "down", colorStart, colorMiddle,
+  colorEnd, colorStartPos = 0, colorMiddlePos = 50,
+  colorEndPos = 100)
 }
 \arguments{
 \item{direction}{String. Direction of the gradient (down/right). Defaults to down.}
@@ -42,4 +43,3 @@ cssGradientThreeColors(
 \seealso{
 \code{\link{shinyDashboardThemeDIY}, \link{shinyDashboardLogoDIY}},
 }
-

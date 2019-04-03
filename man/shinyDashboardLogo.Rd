@@ -35,4 +35,3 @@ ui <- dashboardPage(
 \seealso{
 \code{\link{shinyDashboardLogoDIY}, \link{shinyDashboardThemes}}
 }
-

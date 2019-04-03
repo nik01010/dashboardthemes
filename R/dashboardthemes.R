@@ -961,6 +961,11 @@ shinyDashboardThemeDIY <- function(
             box-shadow: inset 0px 0px 0px, 0px 0px 0px;
           }
 
+          /* multi-row selectize input */
+          .selectize-control.multi .selectize-input.has-items {
+            height: auto;
+          }
+
           /* verbatim text output */
           .qt pre, .qt code {
             font-family: ', appFontFamily, ' !important;

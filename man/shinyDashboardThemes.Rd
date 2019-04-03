@@ -27,6 +27,7 @@ Calls a custom theme object created using shinyDashboardThemeDIY
   \item \strong{purple_gradient}: Demonstrates use of dark gradients and rounded corners.
 }
 }
+
 \examples{
 ...
 ### ui body
@@ -45,4 +46,3 @@ dashboardBody(
 \seealso{
 \code{\link{shinyDashboardThemeDIY}, \link{shinyDashboardLogo}}
 }
-
