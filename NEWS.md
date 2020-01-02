@@ -1,5 +1,8 @@
 ### dashboardthemes ----------------------------------------
 
+### v1.0.6
+* Fixed a UI bug where submenu items would incorrectly receive the "selected" colour by default instead of only on selection. (#19)
+
 ### v1.0.5
 * Fixed small bug with multi-line selectize drop-box height cutting off - now set to auto by default.
 

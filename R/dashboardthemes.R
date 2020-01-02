@@ -657,7 +657,7 @@ shinyDashboardThemeDIY <- function(
           }
 
           /* sidebar: tab selected */
-          .skin-blue .main-sidebar .sidebar .sidebar-menu .active a {
+          .skin-blue .main-sidebar .sidebar .sidebar-menu .active > a {
             color: ', sidebarTabTextColorSelected, ';
             font-size: ', sidebarTabTextSize, 'px;
             border-radius: ', sidebarTabRadiusSelected, ';
