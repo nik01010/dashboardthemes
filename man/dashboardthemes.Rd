@@ -3,7 +3,6 @@
 \docType{package}
 \name{dashboardthemes}
 \alias{dashboardthemes}
-\alias{dashboardthemes-package}
 \title{dashboardthemes: a package for custom themes in shinydashboard applications}
 \description{
 The dashboardthemes package provides two main important features:

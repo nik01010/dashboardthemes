@@ -52,7 +52,10 @@ Use by inserting into the title parameter within the dashboardHeader part of an 
   
       ### changing logo
       title = shinyDashboardLogo(
-        theme = "blue_gradient"
+        theme = "blue_gradient",
+        boldText = "Shiny",
+        mainText = "App",
+        badgeText = "v1.1"
       )
       ...
 
@@ -263,7 +266,7 @@ Example of creating a custom theme object. Each parameter can be changed as requ
 | Theme          | Code | Description                        |
 | ------------------ |------------|-----------------------------------------------|
 | Blue gradient | blue_gradient | Demonstrates use of gradients, shadows and rounded corners |
-| BoE website | boe_website | Styled similarly to the new BoE website |
+| Flat Red | flat_red | Flat colour theme with red highlights. |
 | Grey light | grey_light | Simple, light theme using a grey colour schemes |
 | Grey dark | grey_dark | Demonstrates use of inverted dark colour schemes |
 | OneNote | onenote | Styled similarly to the OneNote application |
@@ -275,7 +278,7 @@ Example of creating a custom theme object. Each parameter can be changed as requ
 <a href="https://ibb.co/dbMBHn" target="_blank"><img src="https://preview.ibb.co/ik0hOS/blue_gradient.png" alt="blue_gradient" border="0"></a>
 <br>
 
-### BoE website
+### Flat Red
 <a href="https://ibb.co/bvGNOS" target="_blank"><img src="https://preview.ibb.co/mx7U3S/boe_website.png" alt="boe_website" border="0"></a>
 <br>
 

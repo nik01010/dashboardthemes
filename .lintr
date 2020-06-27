@@ -1,0 +1,33 @@
+linters: with_defaults(
+  object_name_linter(styles = c("CamelCase", c("camelCase"))),
+  object_length_linter(30),
+  line_length_linter(110),
+  assignment_linter,
+  object_usage_linter,
+  open_curly_linter = NULL,
+  closed_curly_linter(allow_single_line = FALSE),
+  paren_brace_linter,
+  commas_linter,
+  spaces_inside_linter,
+  spaces_left_parentheses_linter,
+  commented_code_linter = NULL,
+  cyclocomp_linter,
+  equals_na_linter,
+  function_left_parentheses_linter,
+  single_quotes_linter = NULL,
+  pipe_continuation_linter,
+  seq_linter,
+  T_and_F_symbol_linter,
+  trailing_whitespace_linter = NULL,
+  undesirable_function_linter = NULL,
+  undesirable_operator_linter = NULL,
+  todo_comment_linter = NULL
+  # WIP: add custom lint rules for:
+  # - parameter names should be specified in functions
+  # - white space rules for equals signs
+  # - unit tests should use arrange/act/assert pattern
+  # - etc
+  )
+exclude: "# Exclude Linting"
+exclude_start: "# Begin Exclude Linting"
+exclude_end: "# End Exclude Linting"
