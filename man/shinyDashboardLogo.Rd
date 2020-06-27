@@ -4,10 +4,21 @@
 \alias{shinyDashboardLogo}
 \title{shinyDashboardLogo}
 \usage{
-shinyDashboardLogo(theme, boldText, mainText, badgeText)
+shinyDashboardLogo(
+  theme,
+  boldText = "Shiny",
+  mainText = "App",
+  badgeText = "v1.1"
+)
 }
 \arguments{
 \item{theme}{String. Name of theme to be used}
+
+\item{boldText}{String. Bold text for the logo.}
+
+\item{mainText}{String. Main text for the logo.}
+
+\item{badgeText}{String. Text for the logo badge.}
 }
 \value{
 HTML code. Logo for shinydashboard's sidebar.
@@ -19,6 +30,7 @@ Calls a custom logo object created using shinyDashboardLogoDIY
 This logo design was inspired from \url{http://www.dataseries.org/}.
 }
 \examples{
+\dontrun{
 ...
 ### ui
 ui <- dashboardPage(
@@ -34,6 +46,7 @@ ui <- dashboardPage(
       badgeText = "v1.1"
     )
     ...
+}
 }
 \seealso{
 \code{\link{shinyDashboardLogoDIY}, \link{shinyDashboardThemes}}

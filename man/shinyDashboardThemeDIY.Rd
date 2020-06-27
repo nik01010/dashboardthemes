@@ -252,6 +252,7 @@ CSS code. Theme for a shinydashboard application.
 Creates a custom theme object for a shinydashboard application
 }
 \examples{
+\dontrun{
 theme_blue_gradient <- shinyDashboardThemeDIY(
 
   ### general
@@ -378,6 +379,7 @@ theme_blue_gradient <- shinyDashboardThemeDIY(
   ,tableBorderRowSize = 1
 
 )
+}
 }
 \seealso{
 \code{\link{shinyDashboardThemes}, \link{shinyDashboardLogoDIY}, \link{cssGradientThreeColors}}

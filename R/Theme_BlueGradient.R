@@ -1,27 +1,29 @@
-#' @include dashboardthemes.R
-NULL
-
-
 # Logo: Blue Gradient -----------------------------------------------------------------------------------
 #' @title logo_blue_gradient
 #' @description Blue Gradient logo for a shinydashboard application
+#'
+#' @param boldText String. Bold text for the logo.
+#' @param mainText String. Main text for the logo.
+#' @param badgeText String. Text for the logo badge.
 #'
 #' @return Object produced by shinyDashboardLogoDIY
 #' @seealso \code{\link{shinyDashboardLogoDIY}}
 #' @export
 logo_blue_gradient <- function(boldText = "Shiny", mainText = "App", badgeText = "v1.1") {
   shinyDashboardLogoDIY(
-    boldText = boldText
-    ,mainText = mainText
-    ,textSize = 16
-    ,badgeText = badgeText
-    ,badgeTextColor = "white"
-    ,badgeTextSize = 2
-    ,badgeBackColor = "#40E0D0"
-    ,badgeBorderRadius = 3
+    boldText = boldText,
+    mainText = mainText,
+    textSize = 16,
+    badgeText = badgeText,
+    badgeTextColor = "white",
+    badgeTextSize = 2,
+    badgeBackColor = "#40E0D0",
+    badgeBorderRadius = 3
   )
 }
 
+
+# Begin Exclude Linting
 
 # Theme: BlueGradient -----------------------------------------------------------------------------------
 #' @title theme_blue_gradient
@@ -156,3 +158,5 @@ theme_blue_gradient <- shinyDashboardThemeDIY(
   ,tableBorderRowSize = 1
 
 )
+
+# End Exclude Linting

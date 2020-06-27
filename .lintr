@@ -1,5 +1,5 @@
 linters: with_defaults(
-  object_name_linter(styles = c("CamelCase", c("camelCase"))),
+  object_name_linter(styles = c("CamelCase", "camelCase", "snake_case")),
   object_length_linter(30),
   line_length_linter(110),
   assignment_linter,

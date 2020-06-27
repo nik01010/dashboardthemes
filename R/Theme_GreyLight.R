@@ -1,27 +1,29 @@
-#' @include dashboardthemes.R
-NULL
-
-
 # Logo: Grey Light --------------------------------------------------------------------------------------
 #' @title logo_grey_light
 #' @description Grey Light logo for a shinydashboard application
+#'
+#' @param boldText String. Bold text for the logo.
+#' @param mainText String. Main text for the logo.
+#' @param badgeText String. Text for the logo badge.
 #'
 #' @return Object produced by shinyDashboardLogoDIY
 #' @seealso \code{\link{shinyDashboardLogoDIY}}
 #' @export
 logo_grey_light <- function(boldText = "Shiny", mainText = "App", badgeText = "v1.1") {
   shinyDashboardLogoDIY(
-    boldText = boldText
-    ,mainText = mainText
-    ,textSize = 16
-    ,badgeText = badgeText
-    ,badgeTextColor = "white"
-    ,badgeTextSize = 2
-    ,badgeBackColor = "rgb(150,150,150)"
-    ,badgeBorderRadius = 3
+    boldText = boldText,
+    mainText = mainText,
+    textSize = 16,
+    badgeText = badgeText,
+    badgeTextColor = "white",
+    badgeTextSize = 2,
+    badgeBackColor = "rgb(150,150,150)",
+    badgeBorderRadius = 3
   )
 }
 
+
+# Begin Exclude Linting
 
 # Theme: Grey Light -------------------------------------------------------------------------------------
 #' @title theme_grey_light
@@ -131,3 +133,5 @@ theme_grey_light <- shinyDashboardThemeDIY(
   ,tableBorderRowSize = 1
 
 )
+
+# End Exclude Linting

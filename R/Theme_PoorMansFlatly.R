@@ -1,27 +1,29 @@
-#' @include dashboardthemes.R
-NULL
-
-
 # Logo: Poor Man's Flatly -------------------------------------------------------------------------------
 #' @title logo_poor_mans_flatly
 #' @description Poor Man's Flatly logo for a shinydashboard application
+#'
+#' @param boldText String. Bold text for the logo.
+#' @param mainText String. Main text for the logo.
+#' @param badgeText String. Text for the logo badge.
 #'
 #' @return Object produced by shinyDashboardLogoDIY
 #' @seealso \code{\link{shinyDashboardLogoDIY}}
 #' @export
 logo_poor_mans_flatly <- function(boldText = "Shiny", mainText = "App", badgeText = "v1.1") {
   shinyDashboardLogoDIY(
-    boldText = boldText
-    ,mainText = mainText
-    ,textSize = 16
-    ,badgeText = badgeText
-    ,badgeTextColor = "white"
-    ,badgeTextSize = 2
-    ,badgeBackColor = "rgb(44,62,80)"
-    ,badgeBorderRadius = 3
+    boldText = boldText,
+    mainText = mainText,
+    textSize = 16,
+    badgeText = badgeText,
+    badgeTextColor = "white",
+    badgeTextSize = 2,
+    badgeBackColor = "rgb(44,62,80)",
+    badgeBorderRadius = 3
   )
 }
 
+
+# Begin Exclude Linting
 
 # Theme: Poor Man's Flatly ------------------------------------------------------------------------------
 #' @title theme_poor_mans_flatly
@@ -132,3 +134,5 @@ theme_poor_mans_flatly <- shinyDashboardThemeDIY(
   ,tableBorderRowSize = 1
 
 )
+
+# End Exclude Linting

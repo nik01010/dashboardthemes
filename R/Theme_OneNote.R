@@ -1,27 +1,29 @@
-#' @include dashboardthemes.R
-NULL
-
-
 # Logo: OneNote -----------------------------------------------------------------------------------------
 #' @title logo_onenote
 #' @description OneNote logo for a shinydashboard application
+#'
+#' @param boldText String. Bold text for the logo.
+#' @param mainText String. Main text for the logo.
+#' @param badgeText String. Text for the logo badge.
 #'
 #' @return Object produced by shinyDashboardLogoDIY
 #' @seealso \code{\link{shinyDashboardLogoDIY}}
 #' @export
 logo_onenote <- function(boldText = "Shiny", mainText = "App", badgeText = "v1.1") {
   shinyDashboardLogoDIY(
-    boldText = boldText
-    ,mainText = mainText
-    ,textSize = 16
-    ,badgeText = badgeText
-    ,badgeTextColor = "purple"
-    ,badgeTextSize = 2
-    ,badgeBackColor = "rgb(255,255,255)"
-    ,badgeBorderRadius = 3
+    boldText = boldText,
+    mainText = mainText,
+    textSize = 16,
+    badgeText = badgeText,
+    badgeTextColor = "purple",
+    badgeTextSize = 2,
+    badgeBackColor = "rgb(255,255,255)",
+    badgeBorderRadius = 3
   )
 }
 
+
+# Begin Exclude Linting
 
 # Theme: OneNote ----------------------------------------------------------------------------------------
 #' @title theme_onenote
@@ -156,3 +158,5 @@ theme_onenote <- shinyDashboardThemeDIY(
   ,tableBorderRowSize = 1
 
 )
+
+# End Exclude Linting

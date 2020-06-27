@@ -84,6 +84,7 @@
 #'
 #' @return CSS code. Theme for a shinydashboard application.
 #' @examples
+#' \dontrun{
 #' theme_blue_gradient <- shinyDashboardThemeDIY(
 #'
 #'   ### general
@@ -210,6 +211,7 @@
 #'   ,tableBorderRowSize = 1
 #'
 #' )
+#' }
 #' @seealso \code{\link{shinyDashboardThemes}, \link{shinyDashboardLogoDIY}, \link{cssGradientThreeColors}}
 #' @export
 shinyDashboardThemeDIY <- function(
@@ -245,14 +247,14 @@ shinyDashboardThemeDIY <- function(
           /* font */
           body, label, input, button, select, box,
           .h1, .h2, .h3, .h4, .h5, h1, h2, h3, h4, h5 {
-            font-family: "',appFontFamily,'";
+            font-family: "', appFontFamily, '";
             color: ', appFontColor, ';
           }
 
           /* font: fix for h6 */
           /* messes up sidebar user section if included above */
           .h6, h6 {
-            font-family: "',appFontFamily,'";
+            font-family: "', appFontFamily, '";
           }
 
           /* sidebar: logo */
@@ -280,7 +282,7 @@ shinyDashboardThemeDIY <- function(
           /* header */
           .skin-blue .main-header .navbar {
             background: ', headerBackColor, ';
-            box-shadow: ', headerBoxShadowSize, ' ', headerBoxShadowColor ,';
+            box-shadow: ', headerBoxShadowSize, ' ', headerBoxShadowColor, ';
           }
 
           /* sidebar*/
@@ -313,7 +315,7 @@ shinyDashboardThemeDIY <- function(
           /* sidebar: tabs */
           .skin-blue .main-sidebar .sidebar .sidebar-menu a {
             color: ', sidebarTabTextColor, ';
-            font-size: ', sidebarTabTextSize ,'px;
+            font-size: ', sidebarTabTextSize, 'px;
             border-style: ', sidebarTabBorderStyle, ';
             border-color: ', sidebarTabBorderColor, ';
             border-width: ', sidebarTabBorderWidth, 'px;
@@ -337,10 +339,9 @@ shinyDashboardThemeDIY <- function(
 
           /* sidebar: tab hovered */
           .skin-blue .main-sidebar .sidebar .sidebar-menu a:hover {
-            background: '
-          ,sidebarTabBackColorHover, ';'
-          ,'color: ', sidebarTabTextColorHover, ';
-            font-size: ', sidebarTabTextSize ,'px;
+            background: ', sidebarTabBackColorHover, ';
+            color: ', sidebarTabTextColorHover, ';
+            font-size: ', sidebarTabTextSize, 'px;
             border-style: ', sidebarTabBorderStyleHover, ';
             border-color: ', sidebarTabBorderColorHover, ';
             border-width: ', sidebarTabBorderWidthHover, 'px;
@@ -349,7 +350,7 @@ shinyDashboardThemeDIY <- function(
 
           /* sidebar: subtab */
           .skin-blue .sidebar-menu > li > .treeview-menu {
-          	margin: 0px;
+            margin: 0px;
             background: ', sidebarMenuBackColor, ';
           }
           .skin-blue .treeview-menu > li > a {
@@ -410,7 +411,8 @@ shinyDashboardThemeDIY <- function(
           }
 
           /* tabbox: tab color */
-          .nav-tabs-custom, .nav-tabs-custom .nav-tabs li.active:hover a, .nav-tabs-custom .nav-tabs li.active a {
+          .nav-tabs-custom, .nav-tabs-custom .nav-tabs li.active:hover a,
+          .nav-tabs-custom .nav-tabs li.active a {
             background: ', tabBoxTabColor, ';
             color: ', appFontColor, ';
             border-radius: ', boxBorderRadius, 'px;
@@ -653,7 +655,8 @@ shinyDashboardThemeDIY <- function(
           }
 
           /* table: row border color*/
-          .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+          .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td,
+          .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
             border-top: ', tableBorderRowSize, 'px solid ', tableBorderColor, ';
           }
 

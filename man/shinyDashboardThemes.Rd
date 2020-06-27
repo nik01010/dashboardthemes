@@ -23,12 +23,14 @@ Calls a custom theme object created using shinyDashboardThemeDIY
   \item \strong{grey_light}: Lightweight grey theme.
   \item \strong{grey_dark}: Demonstrates use of inverted dark colour schemes.
   \item \strong{onenote}: Styled similarly to the OneNote application.
-  \item \strong{poor_mans_flatly}: Poor man`s version of the \href{https://bootswatch.com/flatly/}{Flatly} theme.
+  \item \strong{poor_mans_flatly}: Poor man`s version of the
+  \href{https://bootswatch.com/flatly/}{Flatly} theme.
   \item \strong{purple_gradient}: Demonstrates use of dark gradients and rounded corners.
 }
 }
 
 \examples{
+\dontrun{
 ...
 ### ui body
 dashboardBody(
@@ -42,6 +44,7 @@ dashboardBody(
   ,tabItems(
     tabItem(
       ...
+}
 }
 \seealso{
 \code{\link{shinyDashboardThemeDIY}, \link{shinyDashboardLogo}}

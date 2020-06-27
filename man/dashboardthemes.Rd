@@ -18,7 +18,8 @@ The available functions are:
   \item \code{\link{shinyDashboardThemes}}: Calls a custom theme created using shinyDashboardThemeDIY.
   \item \code{\link{shinyDashboardLogo}}: Calls a custom logo created using shinyDashboardLogoDIY.
   \item \code{\link{shinyDashboardThemeDIY}}: Creates a custom theme object.
-  \item \code{\link{shinyDashboardLogoDIY}}: Creates a custom logo object. Inspired from \href{http://www.dataseries.org/}{here}.
+  \item \code{\link{shinyDashboardLogoDIY}}: Creates a custom logo object.
+  Inspired from \href{http://www.dataseries.org/}{here}.
   \item \code{\link{cssGradientThreeColors}}: Creates a three colour gradient to be used in themes.
 }
 }

@@ -3,9 +3,13 @@
 #' @description Calls a custom logo object created using shinyDashboardLogoDIY
 #'
 #' @param theme String. Name of theme to be used
+#' @param boldText String. Bold text for the logo.
+#' @param mainText String. Main text for the logo.
+#' @param badgeText String. Text for the logo badge.
 #'
 #' @return HTML code. Logo for shinydashboard's sidebar.
 #' @examples
+#' \dontrun{
 #' ...
 #' ### ui
 #' ui <- dashboardPage(
@@ -21,10 +25,11 @@
 #'       badgeText = "v1.1"
 #'     )
 #'     ...
+#' }
 #' @seealso \code{\link{shinyDashboardLogoDIY}, \link{shinyDashboardThemes}}
 #' @note This logo design was inspired from \url{http://www.dataseries.org/}.
 #' @export
-shinyDashboardLogo <- function(theme, boldText, mainText, badgeText) {
+shinyDashboardLogo <- function(theme, boldText = "Shiny", mainText = "App", badgeText = "v1.1") {
 
   if (theme == "blue_gradient") {
 
@@ -52,11 +57,11 @@ shinyDashboardLogo <- function(theme, boldText, mainText, badgeText) {
 
   } else if (theme == "boe_website") {
 
-    stop("dashboardthemes: boe_website has been discontinued after v1.1.0, please use flat_red instead.")
+    stop("boe_website has been discontinued after v1.1.0, please use flat_red instead.")
 
   } else {
 
-    stop("dashboardthemes: the chosen theme isn't supported.")
+    stop("The chosen theme isn't supported.")
 
   }
 

@@ -6,6 +6,13 @@
 \usage{
 logo_grey_light(boldText = "Shiny", mainText = "App", badgeText = "v1.1")
 }
+\arguments{
+\item{boldText}{String. Bold text for the logo.}
+
+\item{mainText}{String. Main text for the logo.}
+
+\item{badgeText}{String. Text for the logo badge.}
+}
 \value{
 Object produced by shinyDashboardLogoDIY
 }
