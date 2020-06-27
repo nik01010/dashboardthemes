@@ -35,6 +35,10 @@ shinyDashboardLogo <- function(theme, boldText = "Shiny", mainText = "App", badg
 
     return(logo_blue_gradient(boldText = boldText, mainText = mainText, badgeText = badgeText))
 
+  } else if (theme == "flat_red") {
+
+    return(logo_flat_red(boldText = boldText, mainText = mainText, badgeText = badgeText))
+
   } else if (theme == "grey_light") {
 
     return(logo_grey_light(boldText = boldText, mainText = mainText, badgeText = badgeText))
@@ -57,7 +61,7 @@ shinyDashboardLogo <- function(theme, boldText = "Shiny", mainText = "App", badg
 
   } else if (theme == "boe_website") {
 
-    stop("boe_website has been discontinued after v1.1.0, please use flat_red instead.")
+    stop("The boe_website theme has been discontinued after v1.1.0, please use flat_red instead.")
 
   } else {
 

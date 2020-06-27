@@ -66,7 +66,7 @@ shinyDashboardThemes <- function(theme) {
 
   } else if (theme == "boe_website") {
 
-    stop("boe_website has been discontinued after v1.1.0, please use flat_red instead.")
+    stop("The boe_website theme has been discontinued after v1.1.0, please use flat_red instead.")
 
   } else {
 
