@@ -33,26 +33,21 @@ shinyDashboardLogoDIY <- function(
   badgeTextSize = 2, badgeBackColor, badgeBorderRadius = 3
 ) {
 
-  htmltools::HTML(
-
-    paste0(
-
+  htmlCode <- htmltools::HTML(
+    text = paste0(
       "<p style=\"font-size:", textSize, "px\">
-
       <b> ", boldText, " </b>",
-
       mainText, "<span> &nbsp; </span>
-
       <span style=\"background-color: ", badgeBackColor, ";
-
       border-radius: ", badgeBorderRadius, "px; \"> &nbsp;
-
       <font color=\"", badgeTextColor, "\" size=\"", badgeTextSize, "\">",
-
       badgeText, "  </font> &nbsp; </span> </p>"
-
     )
-
   )
 
+  # removing new line symbols and formatting spacing
+  htmlCode <- gsub(pattern = "\n", replacement = "", x = htmlCode)
+  htmlCode <- gsub(pattern = "[[:space:]]{2,3}", replacement = "", x = htmlCode)
+
+  return(htmlCode)
 }

@@ -1,6 +1,6 @@
 context("CreateCss_cssGradientThreeColors")
 
-test_that("CssGradientThreeColors_ShouldReturnCorrectCss_IfCalledWithValidParameters", {
+test_that("cssGradientThreeColors_ShouldReturnCorrectCss_IfCalledWithValidSettings", {
   # Arrange
   direction <- "down"
   colorStart <- "rgb(155,0,0)"
