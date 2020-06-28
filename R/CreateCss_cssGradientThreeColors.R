@@ -47,32 +47,32 @@ cssGradientThreeColors <- function(
 
   # building up css code
   cssCode <- paste0(
-    colorStart, ';
+  colorStart, ';
   background: -moz-linear-gradient(',
     colorStartSide, ', ', colorStart, " ", colorStartPos, '%, ', colorMiddle,
-    " ", colorMiddlePos, '%,', colorEnd, " ", colorEndPos, '%);
+    " ", colorMiddlePos, '%, ', colorEnd, " ", colorEndPos, '%);
   background: -webkit-gradient(',
     colorStartSideCorner, ',', colorEndSideCorner, ',
-    color-stop(', colorStartPos, '%, ', " ", colorStart, '),
+    color-stop(', colorStartPos, '%, ', colorStart, '),
     color-stop(', colorMiddlePos, '%, ', colorMiddle, '),
-    color-stop(', colorEndPos, '%,', colorEnd, '));
+    color-stop(', colorEndPos, '%, ', colorEnd, '));
   background: -webkit-linear-gradient(',
-    colorStartSide, ', ', " ", colorStart, " ", colorStartPos, '%, ', colorMiddle, " ",
+    colorStartSide, ', ', colorStart, " ", colorStartPos, '%, ', colorMiddle, " ",
     colorMiddlePos, '%, ', colorEnd, " ", colorEndPos, '%);
   background: -o-linear-gradient(',
-    colorStartSide, ', ', " ", colorStart, " ", colorStartPos, '%, ', colorMiddle, " ",
+    colorStartSide, ', ', colorStart, " ", colorStartPos, '%, ', colorMiddle, " ",
     colorMiddlePos, '%, ', colorEnd, " ", colorEndPos, '%);
   background: -ms-linear-gradient(',
-    colorStartSide, ', ', " ", colorStart, " ", colorStartPos, '%, ', colorMiddle, " ",
+    colorStartSide, ', ', colorStart, " ", colorStartPos, '%, ', colorMiddle, " ",
     colorMiddlePos, '%, ', colorEnd, " ", colorEndPos, '%);
   background: linear-gradient(',
-    colorDirection, ', ', " ", colorStart, " ", colorStartPos, '%, ', colorMiddle, " ",
+    colorDirection, ', ', colorStart, " ", colorStartPos, '%, ', colorMiddle, " ",
     colorMiddlePos, '%, ', colorEnd, " ", colorEndPos, '%)'
   )
 
-  # removing new line symbols
-  newLinePattern <- "\n"
-  cssCode <- gsub(pattern = newLinePattern, replacement = "", x = cssCode)
+  # removing new line symbols and formatting spacing
+  cssCode <- gsub(pattern = "\n", replacement = "", x = cssCode)
+  cssCode <- gsub(pattern = "[[:space:]]{2,3}", replacement = "", x = cssCode)
 
   return(cssCode)
 }

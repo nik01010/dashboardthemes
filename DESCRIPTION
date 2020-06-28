@@ -14,10 +14,12 @@ Depends:
 Imports: 
   htmltools (>= 0.3.5)
 Suggests: 
-  testthat,
-  lintr,
-  knitr,
-  rmarkdown
+    testthat,
+    lintr,
+    knitr,
+    rmarkdown,
+    glue,
+    covr
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
