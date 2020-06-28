@@ -3,7 +3,7 @@
 <a href="https://nik01010.wordpress.com/" target="_blank">Blog</a> | <a href="https://nik01010.wordpress.com/contact/" target="_blank">Contact</a>
 <br>
 
-An experimental R package to provide custom theme options for Shinydashboard applications. Released as BETA.
+An experimental R package to provide custom theme options for Shinydashboard applications.
 
 <br>
 <a href="https://ibb.co/dbMBHn" target="_blank"><img src="https://thumb.ibb.co/dbMBHn/blue_gradient.png" alt="blue_gradient" border="0"></a> <a href="https://ibb.co/bvGNOS" target="_blank"><img src="https://thumb.ibb.co/bvGNOS/boe_website.png" alt="boe_website" border="0"></a> <a href="https://ibb.co/cNgYV7" target="_blank"><img src="https://thumb.ibb.co/cNgYV7/grey_dark.png" alt="grey_dark" border="0"></a> <a href="https://ibb.co/iuFGiS" target="_blank"><img src="https://thumb.ibb.co/iuFGiS/grey_light.png" alt="grey_light" border="0"></a> <a href="https://ibb.co/mW4WHn" target="_blank"><img src="https://thumb.ibb.co/mW4WHn/onenote.png" alt="onenote" border="0"></a> <a href="https://ibb.co/mYhkcn" target="_blank"><img src="https://thumb.ibb.co/mYhkcn/poor_mans_flatly.png" alt="poor_mans_flatly" border="0"></a> <a href="https://ibb.co/ea4LA7" target="_blank"><img src="https://thumb.ibb.co/ea4LA7/purple_gradient.png" alt="purple_gradient" border="0"></a>
@@ -18,7 +18,7 @@ An experimental R package to provide custom theme options for Shinydashboard app
   
   
 ## Disclaimer
-This is not part of the official Shinydashboard package and is released as a separate set of functionality.  Efforts will be made to ensure compatibility with future versions of Shinydashboard but there could be delays in doing so. As such, dashboardthemes should be treated as an experimental package and used at your own risk.
+This is not part of the official Shinydashboard package and is released as a separate set of functionality.  Efforts will be made to ensure compatibility with future versions of Shinydashboard but there could be delays in doing so.
 
 
 ## Installation
@@ -86,12 +86,12 @@ Example of creating a custom logo object. Each parameter can be changed as requi
 ```R
 
   ### creating custom logo object
-  logo_blue_gradient <- shinyDashboardLogoDIY(
+  customLogo <- shinyDashboardLogoDIY(
 
     boldText = "SD"
     ,mainText = "Themes"
     ,textSize = 16
-    ,badgeText = "BETA"
+    ,badgeText = "v1.1"
     ,badgeTextColor = "white"
     ,badgeTextSize = 2
     ,badgeBackColor = "#40E0D0"
@@ -108,7 +108,7 @@ Example of creating a custom logo object. Each parameter can be changed as requi
       dashboardHeader(
     
         ### changing logo
-        title = logo_blue_gradient
+        title = customLogo
         ...
         
 
@@ -119,7 +119,7 @@ Example of creating a custom theme object. Each parameter can be changed as requ
 ```R
 
   ### creating custom theme object
-  theme_blue_gradient <- shinyDashboardThemeDIY(
+  customTheme <- shinyDashboardThemeDIY(
   
     ### general
     appFontFamily = "Arial"
@@ -252,7 +252,7 @@ Example of creating a custom theme object. Each parameter can be changed as requ
     dashboardBody(
       
       ### changing theme
-      theme_blue_gradient
+      customTheme
       
       ### ui tabs
       ,tabItems(

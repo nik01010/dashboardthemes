@@ -85,7 +85,7 @@
 #' @return CSS code. Theme for a shinydashboard application.
 #' @examples
 #' \dontrun{
-#' theme_blue_gradient <- shinyDashboardThemeDIY(
+#' customTheme <- shinyDashboardThemeDIY(
 #'
 #'   ### general
 #'   appFontFamily = "Arial"

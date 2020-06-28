@@ -47,7 +47,7 @@ logo_blue_gradient <- shinyDashboardLogoDIY(
   boldText = "SD"
   ,mainText = "Themes"
   ,textSize = 16
-  ,badgeText = "BETA"
+  ,badgeText = "v1.1"
   ,badgeTextColor = "white"
   ,badgeTextSize = 2
   ,badgeBackColor = "#40E0D0"

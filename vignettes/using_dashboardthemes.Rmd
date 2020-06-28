@@ -100,7 +100,7 @@ Example of creating a custom theme object. Each parameter can be changed as requ
     dashboardBody(
       
       ### changing theme
-      theme_blue_gradient
+      customTheme
       
       ### ui tabs
       ,tabItems(
@@ -108,7 +108,7 @@ Example of creating a custom theme object. Each parameter can be changed as requ
           ...
 
   ### creating custom theme object
-  theme_blue_gradient <- shinyDashboardThemeDIY(
+  customTheme <- shinyDashboardThemeDIY(
   
     ### general
     appFontFamily = "Arial"
@@ -252,16 +252,16 @@ Example of creating a custom logo object. Each parameter can be changed as requi
       dashboardHeader(
     
         ### changing logo
-        title = logo_blue_gradient
+        title = customLogo
         ...
 
   ### creating custom logo object
-  logo_blue_gradient <- shinyDashboardLogoDIY(
+  customLogo <- shinyDashboardLogoDIY(
 
     boldText = "SD"
     ,mainText = "Themes"
     ,textSize = 16
-    ,badgeText = "BETA"
+    ,badgeText = "v1.1"
     ,badgeTextColor = "white"
     ,badgeTextSize = 2
     ,badgeBackColor = "#40E0D0"
