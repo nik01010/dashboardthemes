@@ -9,6 +9,8 @@ Description: Allows manual creation of themes and logos to be used in
     applications created using the shinydashboard package. Removes the need to
     change the underlying css code by wrapping it into a set of convenient R
     functions.
+URL: https://github.com/nik01010/dashboardthemes
+BugReports: https://github.com/nik01010/dashboardthemes/issues
 Depends: 
   R (>= 3.2.3)
 Imports: 
