@@ -53,3 +53,31 @@ test_that("shinyDashboardLogo_ShouldThrowError_IfCalledForDiscontinuedTheme", {
     expect_true(grepl(pattern = expectedErrorMessage, x = result$message))
   }
 })
+
+test_that("shinyDashboardLogo_ShouldThrowError_IfCalledForInvalidTheme", {
+  invalidThemeNames <- c(
+    "", " ", "invalid_theme",
+    "BLUE_GRADIENT", "blue_gradient ", "blue gradient"
+  )
+
+  for (i in seq_along(invalidThemeNames)) {
+    # Arrange
+    boldText <- "testBoldText"
+    mainText <- "testMainText"
+    badgeText <- "testBadgeText"
+
+    invalidThemeName <- invalidThemeNames[i]
+    expectedErrorMessage <- "The chosen theme isn't supported."
+
+    # Act
+    result <- expect_error(
+      dashboardthemes::shinyDashboardLogo(
+        theme = invalidThemeName, boldText = boldText, mainText = mainText, badgeText = badgeText
+      )
+    )
+
+    # Assert
+    expect_s3_class(result, "error")
+    expect_equal(expectedErrorMessage, result$message)
+  }
+})
