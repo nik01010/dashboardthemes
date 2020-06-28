@@ -1,6 +1,6 @@
 context("CreateLogo_shinyDashboardLogo")
 
-test_that("shinyDashboardLogo_ShouldReturnLogoHtml_IfCalledForValidTheme", {
+test_that("shinyDashboardLogo_ShouldReturnCorrectHtml_IfCalledForValidTheme", {
   validThemeNames <- c(
     "blue_gradient", "flat_red", "grey_light", "grey_dark",
     "onenote", "poor_mans_flatly", "purple_gradient"
