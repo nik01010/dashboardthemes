@@ -37,39 +37,30 @@
 shinyDashboardThemes <- function(theme) {
 
   if (theme == "blue_gradient") {
-
-    return(theme_blue_gradient)
+    return(dashboardthemes::theme_blue_gradient)
 
   } else if (theme == "flat_red") {
-
-    return(theme_flat_red)
+    return(dashboardthemes::theme_flat_red)
 
   } else if (theme == "grey_light") {
-
-    return(theme_grey_light)
+    return(dashboardthemes::theme_grey_light)
 
   } else if (theme == "grey_dark") {
-
-    return(theme_grey_dark)
+    return(dashboardthemes::theme_grey_dark)
 
   } else if (theme == "onenote") {
-
-    return(theme_onenote)
+    return(dashboardthemes::theme_onenote)
 
   } else if (theme == "poor_mans_flatly") {
-
-    return(theme_poor_mans_flatly)
+    return(dashboardthemes::theme_poor_mans_flatly)
 
   } else if (theme == "purple_gradient") {
-
-    return(theme_purple_gradient)
+    return(dashboardthemes::theme_purple_gradient)
 
   } else if (theme == "boe_website") {
-
     stop("The boe_website theme has been discontinued after v1.1.0, please use flat_red instead.")
 
   } else {
-
     stop("The chosen theme isn't supported.")
 
   }

@@ -10,7 +10,7 @@
 #' @seealso \code{\link{shinyDashboardLogoDIY}}
 #' @export
 logo_poor_mans_flatly <- function(boldText = "Shiny", mainText = "App", badgeText = "v1.1") {
-  shinyDashboardLogoDIY(
+  logo <- dashboardthemes::shinyDashboardLogoDIY(
     boldText = boldText,
     mainText = mainText,
     textSize = 16,
@@ -20,6 +20,8 @@ logo_poor_mans_flatly <- function(boldText = "Shiny", mainText = "App", badgeTex
     badgeBackColor = "rgb(44,62,80)",
     badgeBorderRadius = 3
   )
+
+  return(logo)
 }
 
 

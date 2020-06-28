@@ -32,32 +32,39 @@
 shinyDashboardLogo <- function(theme, boldText = "Shiny", mainText = "App", badgeText = "v1.1") {
 
   if (theme == "blue_gradient") {
-
-    return(logo_blue_gradient(boldText = boldText, mainText = mainText, badgeText = badgeText))
+    return(
+      dashboardthemes::logo_blue_gradient(boldText = boldText, mainText = mainText, badgeText = badgeText)
+    )
 
   } else if (theme == "flat_red") {
-
-    return(logo_flat_red(boldText = boldText, mainText = mainText, badgeText = badgeText))
+    return(
+      dashboardthemes::logo_flat_red(boldText = boldText, mainText = mainText, badgeText = badgeText)
+    )
 
   } else if (theme == "grey_light") {
-
-    return(logo_grey_light(boldText = boldText, mainText = mainText, badgeText = badgeText))
+    return(
+      dashboardthemes::logo_grey_light(boldText = boldText, mainText = mainText, badgeText = badgeText)
+    )
 
   } else if (theme == "grey_dark") {
-
-    return(logo_grey_dark(boldText = boldText, mainText = mainText, badgeText = badgeText))
+    return(
+      dashboardthemes::logo_grey_dark(boldText = boldText, mainText = mainText, badgeText = badgeText)
+    )
 
   } else if (theme == "onenote") {
-
-    return(logo_onenote(boldText = boldText, mainText = mainText, badgeText = badgeText))
+    return(
+      dashboardthemes::logo_onenote(boldText = boldText, mainText = mainText, badgeText = badgeText)
+    )
 
   } else if (theme == "poor_mans_flatly") {
-
-    return(logo_poor_mans_flatly(boldText = boldText, mainText = mainText, badgeText = badgeText))
+    return(
+      dashboardthemes::logo_poor_mans_flatly(boldText = boldText, mainText = mainText, badgeText = badgeText)
+    )
 
   } else if (theme == "purple_gradient") {
-
-    return(logo_purple_gradient(boldText = boldText, mainText = mainText, badgeText = badgeText))
+    return(
+      dashboardthemes::logo_purple_gradient(boldText = boldText, mainText = mainText, badgeText = badgeText)
+    )
 
   } else if (theme == "boe_website") {
 
