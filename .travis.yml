@@ -9,6 +9,11 @@ r:
   - oldrel
   - devel
 
+matrix:
+  exclude:
+    - r: devel
+      os: osx
+
 repos:
   CRAN: https://cloud.r-project.org
 
