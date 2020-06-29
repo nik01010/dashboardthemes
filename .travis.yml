@@ -1,0 +1,23 @@
+language: R
+r:
+  - release
+  - oldrel
+  - devel
+
+repos:
+  CRAN: https://cloud.r-project.org
+
+services:
+  - mongodb
+addons:
+  apt:
+    packages:
+      - libv8-dev
+
+sudo: false
+cache: packages
+latex: false
+warnings_are_errors: true
+
+after_success:
+  - Rscript -e 'covr::codecov()'
