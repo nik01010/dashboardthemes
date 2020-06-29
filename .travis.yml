@@ -1,4 +1,9 @@
-language: R
+language: r
+
+os:
+  - linux
+  - osx
+
 r:
   - release
   - oldrel
@@ -7,8 +12,6 @@ r:
 repos:
   CRAN: https://cloud.r-project.org
 
-services:
-  - mongodb
 addons:
   apt:
     packages:
