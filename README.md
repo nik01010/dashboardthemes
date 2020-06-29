@@ -5,14 +5,13 @@
 
 An R package to provide custom theme options for Shinydashboard applications.
 
-<br>
 <!-- badges: start -->
-[![Travis build status](https://travis-ci.org/nik01010/dashboardthemes.svg?branch=develop)](https://travis-ci.org/nik01010/dashboardthemes)
-[![Codecov test coverage](https://codecov.io/gh/nik01010/dashboardthemes/branch/develop/graph/badge.svg)](https://codecov.io/gh/nik01010/dashboardthemes?branch=develop)
+[![Travis build status](https://travis-ci.org/nik01010/dashboardthemes.svg?branch=dev%2FBackEndRefactor)](https://travis-ci.org/nik01010/dashboardthemes)
+[![Codecov test coverage](https://codecov.io/gh/nik01010/dashboardthemes/branch/dev%2FBackEndRefactor/graph/badge.svg)](https://codecov.io/gh/nik01010/dashboardthemes?branch=dev%2FBackEndRefactor)
 [![Stability: Active](https://masterminds.github.io/stability/active.svg)](https://masterminds.github.io/stability/active.html)
 <!-- badges: end -->
 
-<br>
+
 <a href="https://ibb.co/dbMBHn" target="_blank"><img src="https://thumb.ibb.co/dbMBHn/blue_gradient.png" alt="blue_gradient" border="0"></a> <a href="https://ibb.co/bvGNOS" target="_blank"><img src="https://thumb.ibb.co/bvGNOS/boe_website.png" alt="boe_website" border="0"></a> <a href="https://ibb.co/cNgYV7" target="_blank"><img src="https://thumb.ibb.co/cNgYV7/grey_dark.png" alt="grey_dark" border="0"></a> <a href="https://ibb.co/iuFGiS" target="_blank"><img src="https://thumb.ibb.co/iuFGiS/grey_light.png" alt="grey_light" border="0"></a> <a href="https://ibb.co/mW4WHn" target="_blank"><img src="https://thumb.ibb.co/mW4WHn/onenote.png" alt="onenote" border="0"></a> <a href="https://ibb.co/mYhkcn" target="_blank"><img src="https://thumb.ibb.co/mYhkcn/poor_mans_flatly.png" alt="poor_mans_flatly" border="0"></a> <a href="https://ibb.co/ea4LA7" target="_blank"><img src="https://thumb.ibb.co/ea4LA7/purple_gradient.png" alt="purple_gradient" border="0"></a>
 <br>
 
