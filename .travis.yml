@@ -9,7 +9,7 @@ r:
   - oldrel
   - devel
 
-matrix:
+jobs:
   exclude:
     - r: devel
       os: osx
@@ -22,7 +22,6 @@ addons:
     packages:
       - libv8-dev
 
-sudo: false
 cache: packages
 latex: false
 warnings_are_errors: true
