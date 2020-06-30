@@ -40,7 +40,7 @@ install_github("nik01010/dashboardthemes")
 | Function       | Description                | Input | Output             |
 | ------------- |----------------------|----------------------|-------------------|
 | shinyDashboardThemes | Calls a custom theme created using shinyDashboardThemeDIY | Theme name | Theme settings object |
-| shinyDashboardLogo | Calls a custom logo created using shinyDashboardLogoDIY | Theme name | Logo settings object |
+| shinyDashboardLogo | Calls a custom logo created using shinyDashboardLogoDIY | Theme name and logo text | Logo settings object |
 | shinyDashboardThemeDIY | Creates a custom theme object | Size, colour and other settings for each UI element. See function documentation for input options | Theme settings object |
 | shinyDashboardLogoDIY | Creates a custom logo object. Inspired from <a href="http://www.dataseries.org/" target="_blank">here</a> | Size and colour for the logo. See function documentation for input options | Logo settings object |
 | cssGradientThreeColors | Creates a three colour gradient to be used in themes | Gradient direction, colours, position of middle colour | CSS gradient |
