@@ -43,7 +43,7 @@ This logo design was inspired from \url{http://www.dataseries.org/}.
 }
 \examples{
 \dontrun{
-logo_blue_gradient <- shinyDashboardLogoDIY(
+customLogo <- shinyDashboardLogoDIY(
   boldText = "SD"
   ,mainText = "Themes"
   ,textSize = 16
