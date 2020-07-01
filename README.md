@@ -6,8 +6,8 @@
 An R package to provide custom theme options for Shinydashboard applications.
 
 <!-- badges: start -->
-[![Travis build status](https://travis-ci.org/nik01010/dashboardthemes.svg?branch=dev%2FBackEndRefactor)](https://travis-ci.org/nik01010/dashboardthemes)
-[![Codecov test coverage](https://codecov.io/gh/nik01010/dashboardthemes/branch/dev%2FBackEndRefactor/graph/badge.svg)](https://codecov.io/gh/nik01010/dashboardthemes?branch=dev%2FBackEndRefactor)
+[![Travis build status](https://travis-ci.org/nik01010/dashboardthemes.svg?branch=master)](https://travis-ci.org/nik01010/dashboardthemes)
+[![Codecov test coverage](https://codecov.io/gh/nik01010/dashboardthemes/branch/master/graph/badge.svg)](https://codecov.io/gh/nik01010/dashboardthemes?branch=master)
 [![Stability: Active](https://masterminds.github.io/stability/active.svg)](https://masterminds.github.io/stability/active.html)
 <!-- badges: end -->
 
