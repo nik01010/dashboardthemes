@@ -19,10 +19,6 @@ knitr::opts_chunk$set(
 
 ## Introduction
 
-There are two main methods of creating interfaces to the **R** language: using the original <a href="https://shiny.rstudio.com/" target="_blank">shiny</a> package, or the newer <a href="https://rstudio.github.io/shinydashboard/" target="_blank">shinydashboard</a> package.
-
-One advantage of the original package is being able to change the overall look of applications with <a href="https://rstudio.github.io/shinythemes/" target="_blank">shinythemes</a>. The dashboard package includes a more modern set of user interface options, like collapsible sidebars and boxes, but unfortunately doesn't support the same enhanced themes, instead offering a very limited set of <a href="https://rstudio.github.io/shinydashboard/appearance.html" target="_blank">skins</a>.
-
 This document presents a new method of customising Shinydashboard applications using themes.
 
 
@@ -35,7 +31,7 @@ The new functions are described below:
 | Function       | Description                | Input | Output        |
 | ------------- |----------------------|----------------------|---------------|
 | shinyDashboardThemes | Calls a custom theme created using shinyDashboardThemeDIY | Theme name | Theme settings object |
-| shinyDashboardLogo | Calls a custom logo created using shinyDashboardLogoDIY | Theme name | Logo settings object |
+| shinyDashboardLogo | Calls a custom logo created using shinyDashboardLogoDIY | Theme name and logo text | Logo settings object |
 | shinyDashboardThemeDIY | Creates a custom theme object | Size, colour and other settings for each UI element. See separate tab for input options | Theme settings object |
 | shinyDashboardLogoDIY | Creates a custom logo object. Inspired from <a href="http://www.dataseries.org/" target="_blank">here</a> | Size and colour for the logo. See separate tab for input options | Logo settings object |
 | cssGradientThreeColors | Creates a three colour gradient to be used in themes | Gradient direction, colours, position of middle colour | CSS gradient |
@@ -80,7 +76,10 @@ Use by inserting into the title parameter within the dashboardHeader part of an 
   
       ### changing logo
       title = shinyDashboardLogo(
-        theme = "blue_gradient"
+        theme = "blue_gradient",
+        boldText = "Shiny",
+        mainText = "App",
+        badgeText = "v1.1"
       )
       ...
 
@@ -97,7 +96,7 @@ Example of creating a custom theme object. Each parameter can be changed as requ
     dashboardBody(
       
       ### changing theme
-      theme_blue_gradient
+      customTheme
       
       ### ui tabs
       ,tabItems(
@@ -105,7 +104,7 @@ Example of creating a custom theme object. Each parameter can be changed as requ
           ...
 
   ### creating custom theme object
-  theme_blue_gradient <- shinyDashboardThemeDIY(
+  customTheme <- shinyDashboardThemeDIY(
   
     ### general
     appFontFamily = "Arial"
@@ -249,16 +248,16 @@ Example of creating a custom logo object. Each parameter can be changed as requi
       dashboardHeader(
     
         ### changing logo
-        title = logo_blue_gradient
+        title = customLogo
         ...
 
   ### creating custom logo object
-  logo_blue_gradient <- shinyDashboardLogoDIY(
+  customLogo <- shinyDashboardLogoDIY(
 
     boldText = "SD"
     ,mainText = "Themes"
     ,textSize = 16
-    ,badgeText = "BETA"
+    ,badgeText = "v1.1"
     ,badgeTextColor = "white"
     ,badgeTextSize = 2
     ,badgeBackColor = "#40E0D0"
@@ -277,42 +276,13 @@ Several themes have been created using the new functionality:
 | Theme          | Code | Description                        |
 | ------------------ |------------|-----------------------------------------------|
 | Blue gradient | blue_gradient | Demonstrates use of gradients, shadows and rounded corners |
-| BoE website | boe_website | Styled similarly to the new BoE website |
+| Flat Red | flat_red | Flat colour theme with red highlights. |
 | Grey light | grey_light | Simple, light theme using a grey colour schemes |
 | Grey dark | grey_dark | Demonstrates use of inverted dark colour schemes |
 | OneNote | onenote | Styled similarly to the OneNote application |
 | Poor man's Flatly | poor_mans_flatly | Poor man's version of the <a href="https://bootswatch.com/flatly/" target="_blank">Flatly</a> theme
 | Purple gradient | purple_gradient | Demonstrates high use of gradients and a smaller sidebar |
 
-
-## Theme screenshots
-
-### Blue gradient
-<a href="https://ibb.co/dbMBHn" target="_blank"><img src="https://preview.ibb.co/ik0hOS/blue_gradient.png" alt="blue_gradient" border="0"></a>
-<br>
-
-### BoE website
-<a href="https://ibb.co/bvGNOS" target="_blank"><img src="https://preview.ibb.co/mx7U3S/boe_website.png" alt="boe_website" border="0"></a>
-<br>
-
-### Grey light
-<a href="https://ibb.co/iuFGiS" target="_blank"><img src="https://preview.ibb.co/cVBp3S/grey_light.png" alt="grey_light" border="0"></a>
-<br>
-
-### Grey dark
-<a href="https://ibb.co/cNgYV7" target="_blank"><img src="https://preview.ibb.co/bTgp3S/grey_dark.png" alt="grey_dark" border="0"></a>
-<br>
-
-### OneNote
-<a href="https://ibb.co/mW4WHn" target="_blank"><img src="https://preview.ibb.co/fxYQcn/onenote.png" alt="onenote" border="0"></a>
-<br>
-
-### Poor man's Flatly
-<a href="https://ibb.co/mYhkcn" target="_blank"><img src="https://preview.ibb.co/hRnwiS/poor_mans_flatly.png" alt="poor_mans_flatly" border="0"></a>
-<br>
-
-### Purple gradient
-<a href="https://ibb.co/ea4LA7" target="_blank"><img src="https://preview.ibb.co/mAK93S/purple_gradient.png" alt="purple_gradient" border="0"></a>
 
 ## Known issues
   

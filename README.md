@@ -3,9 +3,15 @@
 <a href="https://nik01010.wordpress.com/" target="_blank">Blog</a> | <a href="https://nik01010.wordpress.com/contact/" target="_blank">Contact</a>
 <br>
 
-An experimental R package to provide custom theme options for Shinydashboard applications. Released as BETA.
+An R package to provide custom theme options for Shinydashboard applications.
 
-<br>
+<!-- badges: start -->
+[![Travis build status](https://travis-ci.org/nik01010/dashboardthemes.svg?branch=master)](https://travis-ci.org/nik01010/dashboardthemes)
+[![Codecov test coverage](https://codecov.io/gh/nik01010/dashboardthemes/branch/master/graph/badge.svg)](https://codecov.io/gh/nik01010/dashboardthemes?branch=master)
+[![Stability: Active](https://masterminds.github.io/stability/active.svg)](https://masterminds.github.io/stability/active.html)
+<!-- badges: end -->
+
+
 <a href="https://ibb.co/dbMBHn" target="_blank"><img src="https://thumb.ibb.co/dbMBHn/blue_gradient.png" alt="blue_gradient" border="0"></a> <a href="https://ibb.co/bvGNOS" target="_blank"><img src="https://thumb.ibb.co/bvGNOS/boe_website.png" alt="boe_website" border="0"></a> <a href="https://ibb.co/cNgYV7" target="_blank"><img src="https://thumb.ibb.co/cNgYV7/grey_dark.png" alt="grey_dark" border="0"></a> <a href="https://ibb.co/iuFGiS" target="_blank"><img src="https://thumb.ibb.co/iuFGiS/grey_light.png" alt="grey_light" border="0"></a> <a href="https://ibb.co/mW4WHn" target="_blank"><img src="https://thumb.ibb.co/mW4WHn/onenote.png" alt="onenote" border="0"></a> <a href="https://ibb.co/mYhkcn" target="_blank"><img src="https://thumb.ibb.co/mYhkcn/poor_mans_flatly.png" alt="poor_mans_flatly" border="0"></a> <a href="https://ibb.co/ea4LA7" target="_blank"><img src="https://thumb.ibb.co/ea4LA7/purple_gradient.png" alt="purple_gradient" border="0"></a>
 <br>
 
@@ -18,7 +24,7 @@ An experimental R package to provide custom theme options for Shinydashboard app
   
   
 ## Disclaimer
-This is not part of the official Shinydashboard package and is released as a separate set of functionality.  Efforts will be made to ensure compatibility with future versions of Shinydashboard but there could be delays in doing so. As such, dashboardthemes should be treated as an experimental package and used at your own risk.
+This is not part of the official Shinydashboard package and is released as a separate set of functionality.  Efforts will be made to ensure compatibility with future versions of Shinydashboard but there could be delays in doing so.
 
 
 ## Installation
@@ -34,7 +40,7 @@ install_github("nik01010/dashboardthemes")
 | Function       | Description                | Input | Output             |
 | ------------- |----------------------|----------------------|-------------------|
 | shinyDashboardThemes | Calls a custom theme created using shinyDashboardThemeDIY | Theme name | Theme settings object |
-| shinyDashboardLogo | Calls a custom logo created using shinyDashboardLogoDIY | Theme name | Logo settings object |
+| shinyDashboardLogo | Calls a custom logo created using shinyDashboardLogoDIY | Theme name and logo text | Logo settings object |
 | shinyDashboardThemeDIY | Creates a custom theme object | Size, colour and other settings for each UI element. See function documentation for input options | Theme settings object |
 | shinyDashboardLogoDIY | Creates a custom logo object. Inspired from <a href="http://www.dataseries.org/" target="_blank">here</a> | Size and colour for the logo. See function documentation for input options | Logo settings object |
 | cssGradientThreeColors | Creates a three colour gradient to be used in themes | Gradient direction, colours, position of middle colour | CSS gradient |
@@ -52,7 +58,10 @@ Use by inserting into the title parameter within the dashboardHeader part of an 
   
       ### changing logo
       title = shinyDashboardLogo(
-        theme = "blue_gradient"
+        theme = "blue_gradient",
+        boldText = "Shiny",
+        mainText = "App",
+        badgeText = "v1.1"
       )
       ...
 
@@ -83,12 +92,12 @@ Example of creating a custom logo object. Each parameter can be changed as requi
 ```R
 
   ### creating custom logo object
-  logo_blue_gradient <- shinyDashboardLogoDIY(
+  customLogo <- shinyDashboardLogoDIY(
 
     boldText = "SD"
     ,mainText = "Themes"
     ,textSize = 16
-    ,badgeText = "BETA"
+    ,badgeText = "v1.1"
     ,badgeTextColor = "white"
     ,badgeTextSize = 2
     ,badgeBackColor = "#40E0D0"
@@ -105,7 +114,7 @@ Example of creating a custom logo object. Each parameter can be changed as requi
       dashboardHeader(
     
         ### changing logo
-        title = logo_blue_gradient
+        title = customLogo
         ...
         
 
@@ -116,7 +125,7 @@ Example of creating a custom theme object. Each parameter can be changed as requ
 ```R
 
   ### creating custom theme object
-  theme_blue_gradient <- shinyDashboardThemeDIY(
+  customTheme <- shinyDashboardThemeDIY(
   
     ### general
     appFontFamily = "Arial"
@@ -249,7 +258,7 @@ Example of creating a custom theme object. Each parameter can be changed as requ
     dashboardBody(
       
       ### changing theme
-      theme_blue_gradient
+      customTheme
       
       ### ui tabs
       ,tabItems(
@@ -263,7 +272,7 @@ Example of creating a custom theme object. Each parameter can be changed as requ
 | Theme          | Code | Description                        |
 | ------------------ |------------|-----------------------------------------------|
 | Blue gradient | blue_gradient | Demonstrates use of gradients, shadows and rounded corners |
-| BoE website | boe_website | Styled similarly to the new BoE website |
+| Flat Red | flat_red | Flat colour theme with red highlights. |
 | Grey light | grey_light | Simple, light theme using a grey colour schemes |
 | Grey dark | grey_dark | Demonstrates use of inverted dark colour schemes |
 | OneNote | onenote | Styled similarly to the OneNote application |
@@ -275,7 +284,7 @@ Example of creating a custom theme object. Each parameter can be changed as requ
 <a href="https://ibb.co/dbMBHn" target="_blank"><img src="https://preview.ibb.co/ik0hOS/blue_gradient.png" alt="blue_gradient" border="0"></a>
 <br>
 
-### BoE website
+### Flat Red
 <a href="https://ibb.co/bvGNOS" target="_blank"><img src="https://preview.ibb.co/mx7U3S/boe_website.png" alt="boe_website" border="0"></a>
 <br>
 
