@@ -5,3 +5,5 @@
 ^\.lintr$
 ^\.travis\.yml$
 ^codecov\.yml$
+^LICENSE\.md$
+^cran-comments\.md$
