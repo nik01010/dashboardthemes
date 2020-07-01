@@ -284,35 +284,6 @@ Several themes have been created using the new functionality:
 | Purple gradient | purple_gradient | Demonstrates high use of gradients and a smaller sidebar |
 
 
-## Theme screenshots
-
-### Blue gradient
-<a href="https://ibb.co/dbMBHn" target="_blank"><img src="https://preview.ibb.co/ik0hOS/blue_gradient.png" alt="blue_gradient" border="0"></a>
-<br>
-
-### Flat Red
-<a href="https://ibb.co/bvGNOS" target="_blank"><img src="https://preview.ibb.co/mx7U3S/boe_website.png" alt="boe_website" border="0"></a>
-<br>
-
-### Grey light
-<a href="https://ibb.co/iuFGiS" target="_blank"><img src="https://preview.ibb.co/cVBp3S/grey_light.png" alt="grey_light" border="0"></a>
-<br>
-
-### Grey dark
-<a href="https://ibb.co/cNgYV7" target="_blank"><img src="https://preview.ibb.co/bTgp3S/grey_dark.png" alt="grey_dark" border="0"></a>
-<br>
-
-### OneNote
-<a href="https://ibb.co/mW4WHn" target="_blank"><img src="https://preview.ibb.co/fxYQcn/onenote.png" alt="onenote" border="0"></a>
-<br>
-
-### Poor man's Flatly
-<a href="https://ibb.co/mYhkcn" target="_blank"><img src="https://preview.ibb.co/hRnwiS/poor_mans_flatly.png" alt="poor_mans_flatly" border="0"></a>
-<br>
-
-### Purple gradient
-<a href="https://ibb.co/ea4LA7" target="_blank"><img src="https://preview.ibb.co/mAK93S/purple_gradient.png" alt="purple_gradient" border="0"></a>
-
 ## Known issues
   
 Some application components have not been fully customised:
