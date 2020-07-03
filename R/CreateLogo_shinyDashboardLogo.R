@@ -9,13 +9,13 @@
 #'
 #' @return HTML code. Logo for shinydashboard's sidebar.
 #' @examples
-#' \dontrun{
-#' ...
+#' \donttest{
+#' #...
 #' ### ui
-#' ui <- dashboardPage(
+#' #ui <- dashboardPage(
 #'
 #'   ### ui header
-#'   dashboardHeader(
+#'   #dashboardHeader(
 #'
 #'     ### changing logo
 #'     title = shinyDashboardLogo(
@@ -24,7 +24,7 @@
 #'       mainText = "App",
 #'       badgeText = "v1.1"
 #'     )
-#'     ...
+#'     #...
 #' }
 #' @seealso \code{\link{shinyDashboardLogoDIY}, \link{shinyDashboardThemes}}
 #' @note This logo design was inspired from \url{http://www.dataseries.org/}.

@@ -30,10 +30,10 @@ Calls a custom theme object created using shinyDashboardThemeDIY
 }
 
 \examples{
-\dontrun{
-...
+\donttest{
+#...
 ### ui body
-dashboardBody(
+#dashboardBody(
 
   ### changing theme
   shinyDashboardThemes(
@@ -41,9 +41,9 @@ dashboardBody(
   )
 
   ### ui tabs
-  ,tabItems(
-    tabItem(
-      ...
+  #,tabItems(
+  #  tabItem(
+  #    ...
 }
 }
 \seealso{

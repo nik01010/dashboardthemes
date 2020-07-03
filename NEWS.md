@@ -1,5 +1,9 @@
 ### dashboardthemes ----------------------------------------
 
+### v1.1.1
+* Updated DESCRIPTION file to use preferred Title and Description formatting.
+* Updated function examples to use \donttest{} instead of \dontrun{} tags.
+
 ### v1.1.0
 * Breaking changes:
   - The boe_website theme has been discontinued, please use flat_red instead.
