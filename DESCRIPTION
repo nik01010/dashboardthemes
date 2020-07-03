@@ -1,12 +1,12 @@
 Package: dashboardthemes
 Type: Package
-Title: Customise the Appearance of Shiny Dashboard Applications using Themes
-Version: 1.1.0
+Title: Customise the Appearance of 'shinydashboard' Applications using Themes
+Version: 1.1.1
 Authors@R: person("Nik", "Lilovski", email = "nik.lilovski@outlook.com",
                   role = c("aut", "cre"))
 Maintainer: Nik Lilovski <nik.lilovski@outlook.com>
 Description: Allows manual creation of themes and logos to be used in
-    applications created using the shinydashboard package. Removes the need to
+    applications created using the 'shinydashboard' package. Removes the need to
     change the underlying css code by wrapping it into a set of convenient R
     functions.
 URL: https://github.com/nik01010/dashboardthemes

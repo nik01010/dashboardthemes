@@ -36,7 +36,7 @@ CSS code. Gradient with three colors.
 Generates CSS code for a gradient with three colors
 }
 \examples{
-\dontrun{
+\donttest{
 cssGradientThreeColors(
   direction = "right"
   ,colorStart = "rgba(44,222,235,1)"

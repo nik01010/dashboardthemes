@@ -13,7 +13,7 @@
 #'
 #' @return HTML code. Logo for shinydashboard's sidebar.
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' customLogo <- shinyDashboardLogoDIY(
 #'   boldText = "SD"
 #'   ,mainText = "Themes"

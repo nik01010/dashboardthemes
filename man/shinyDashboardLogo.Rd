@@ -30,13 +30,13 @@ Calls a custom logo object created using shinyDashboardLogoDIY
 This logo design was inspired from \url{http://www.dataseries.org/}.
 }
 \examples{
-\dontrun{
-...
+\donttest{
+#...
 ### ui
-ui <- dashboardPage(
+#ui <- dashboardPage(
 
   ### ui header
-  dashboardHeader(
+  #dashboardHeader(
 
     ### changing logo
     title = shinyDashboardLogo(
@@ -45,7 +45,7 @@ ui <- dashboardPage(
       mainText = "App",
       badgeText = "v1.1"
     )
-    ...
+    #...
 }
 }
 \seealso{

@@ -17,10 +17,10 @@
 #'
 #' @return CSS code. Theme for shinydashboard.
 #' @examples
-#' \dontrun{
-#' ...
+#' \donttest{
+#' #...
 #' ### ui body
-#' dashboardBody(
+#' #dashboardBody(
 #'
 #'   ### changing theme
 #'   shinyDashboardThemes(
@@ -28,9 +28,9 @@
 #'   )
 #'
 #'   ### ui tabs
-#'   ,tabItems(
-#'     tabItem(
-#'       ...
+#'   #,tabItems(
+#'   #  tabItem(
+#'   #    ...
 #' }
 #' @seealso \code{\link{shinyDashboardThemeDIY}, \link{shinyDashboardLogo}}
 #' @export

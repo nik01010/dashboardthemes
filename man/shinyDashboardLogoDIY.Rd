@@ -42,7 +42,7 @@ Creates a custom logo object for a shinydashboard application
 This logo design was inspired from \url{http://www.dataseries.org/}.
 }
 \examples{
-\dontrun{
+\donttest{
 customLogo <- shinyDashboardLogoDIY(
   boldText = "SD"
   ,mainText = "Themes"

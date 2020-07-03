@@ -84,7 +84,7 @@
 #'
 #' @return CSS code. Theme for a shinydashboard application.
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' customTheme <- shinyDashboardThemeDIY(
 #'
 #'   ### general

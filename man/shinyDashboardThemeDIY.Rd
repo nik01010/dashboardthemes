@@ -252,7 +252,7 @@ CSS code. Theme for a shinydashboard application.
 Creates a custom theme object for a shinydashboard application
 }
 \examples{
-\dontrun{
+\donttest{
 customTheme <- shinyDashboardThemeDIY(
 
   ### general
