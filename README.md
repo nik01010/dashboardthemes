@@ -6,6 +6,7 @@
 An R package to provide custom theme options for Shinydashboard applications.
 
 <!-- badges: start -->
+[![CRAN status](https://www.r-pkg.org/badges/version/dashboardthemes)](https://CRAN.R-project.org/package=dashboardthemes)
 [![Travis build status](https://travis-ci.org/nik01010/dashboardthemes.svg?branch=master)](https://travis-ci.org/nik01010/dashboardthemes)
 [![Codecov test coverage](https://codecov.io/gh/nik01010/dashboardthemes/branch/master/graph/badge.svg)](https://codecov.io/gh/nik01010/dashboardthemes?branch=master)
 [![Stability: Active](https://masterminds.github.io/stability/active.svg)](https://masterminds.github.io/stability/active.html)
@@ -21,14 +22,15 @@ An R package to provide custom theme options for Shinydashboard applications.
 - Easy creation of new themes and logos, without knowledge of CSS code.
 
 - Use of live theme switchers in apps (<a href="https://github.com/nik01010/dashboardThemeSwitcher" target="_blank">Guide available here</a>).
-  
-  
-## Disclaimer
-This is not part of the official Shinydashboard package and is released as a separate set of functionality.  Efforts will be made to ensure compatibility with future versions of Shinydashboard but there could be delays in doing so.
 
 
 ## Installation
+From CRAN:
+```R
+install.packages("dashboardthemes")
+```
 
+From GitHub:
 ```R
 library(devtools)
 install_github("nik01010/dashboardthemes")
@@ -318,3 +320,6 @@ Some application components have not been fully customised:
 - Popup menu and placeholder font colour in date inputs
 
 - Checkbox and radio buttons
+
+## Disclaimer
+This is not part of the official Shinydashboard package and is released as a separate set of functionality.  Efforts will be made to ensure compatibility with future versions of Shinydashboard but there could be delays in doing so.
