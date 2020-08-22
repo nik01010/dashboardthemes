@@ -23,6 +23,7 @@ An R package to provide custom theme options for Shinydashboard applications.
 
 - Use of live theme switchers in apps (<a href="https://github.com/nik01010/dashboardThemeSwitcher" target="_blank">Guide available here</a>).
 
+- Theme designer (<a href="https://github.com/nik01010/dashboardThemeDesigner" target="_blank">Available here</a>)
 
 ## Installation
 From CRAN:

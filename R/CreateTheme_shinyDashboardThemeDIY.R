@@ -673,15 +673,16 @@ shinyDashboardThemeDIY <- function(
       background-color: ', tableBackColor, ' !important;
     }
 
-    /* table: footer border colour */
+    /* table: text and footer border colour */
     table.dataTable {
+      color: ', appFontColor, ' !important;
       border: 0px !important;
     }
 
     /* datatable: selected row */
     table.dataTable tr.selected td, table.dataTable td.selected {
       background-color: ', boxSuccessColor, ' !important;
-              color: rgb(0,0,0) !important;
+      color: rgb(0,0,0) !important;
     }
 
     /* datatable: hover row */
@@ -738,9 +739,6 @@ shinyDashboardThemeDIY <- function(
       height: 80px;
       font-family: ', appFontFamily, ';
       font-size: 15px;
-      color: rgb(0,0,0);
-      background-color: rgb(225,225,225);
-      border-color: rgb(205,205,205);
       border-radius: 10px;
       margin-left: -450px !important;
     }

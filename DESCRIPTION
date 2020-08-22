@@ -1,7 +1,7 @@
 Package: dashboardthemes
 Type: Package
 Title: Customise the Appearance of 'shinydashboard' Applications using Themes
-Version: 1.1.1
+Version: 1.1.2
 Authors@R: person("Nik", "Lilovski", email = "nik.lilovski@outlook.com",
                   role = c("aut", "cre"))
 Maintainer: Nik Lilovski <nik.lilovski@outlook.com>
@@ -25,5 +25,5 @@ Suggests:
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1
 VignetteBuilder: knitr

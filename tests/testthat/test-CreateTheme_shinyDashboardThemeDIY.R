@@ -1,5 +1,7 @@
 context("CreateTheme_shinyDashboardThemeDIY")
 
+# Begin Exclude Linting
+
 test_that("shinyDashboardThemeDIY_ShouldReturnCorrectHtml_IfCalledWithValidSettings", {
   # Arrange
   themeSettings <- list(
@@ -182,3 +184,5 @@ test_that("shinyDashboardThemes_ShouldThrowError_IfCalledForInvalidTheme", {
     expect_true(grepl(pattern = expectedErrorMessage, x = result$message))
   }
 })
+
+# End Exclude Linting
