@@ -1,5 +1,9 @@
 ### dashboardthemes ----------------------------------------
 
+### v1.1.2
+* Fixed problem where shiny notifications were all the same colour for different statuses
+* Fixed problem where DataTable font colour didn't reflect choice of application font colour
+
 ### v1.1.1
 * Updated DESCRIPTION file to use preferred Title and Description formatting.
 * Updated function examples to use \donttest{} instead of \dontrun{} tags.

@@ -20,7 +20,7 @@ test_that("cssGradientThreeColors_ShouldReturnCorrectCss_IfCalledWithValidSettin
     background: -webkit-linear-gradient(top, rgb(155,0,0) 0%, rgb(0,155,0) 50%, rgb(0,0,155) 100%);
     background: -o-linear-gradient(top, rgb(155,0,0) 0%, rgb(0,155,0) 50%, rgb(0,0,155) 100%);
     background: -ms-linear-gradient(top, rgb(155,0,0) 0%, rgb(0,155,0) 50%, rgb(0,0,155) 100%);
-    background: linear-gradient(to bottom, rgb(155,0,0) 0%, rgb(0,155,0) 50%, rgb(0,0,155) 100%)",
+    background: linear-gradient(to bottom, rgb(155,0,0) 0%, rgb(0,155,0) 50%, rgb(0,0,155) 100%)"
   )
   expectedCss <- gsub(pattern = newLinePattern, replacement = "", x = expectedCss)
 
