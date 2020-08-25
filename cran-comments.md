@@ -42,3 +42,14 @@
 * No errors, warnings or notes.
 * Fixed problem where shiny notifications were all the same colour for different statuses
 * Fixed problem where DataTable font colour didn't reflect choice of application font colour
+
+# v1.1.3
+## Test environments
+* Windows 10, R 4.0.2 (on local PC).
+* Linux Xenial Ubuntu 16.04.6 LTS, R release, oldrel, devel (on Travis CI).
+* Mac OS X 10.13.6, R release, oldrel (on Travis CI).
+
+## Submission comments
+2020-08-25
+* No errors, warnings or notes.
+* As requested in v1.1.2 submission, updated image links to new URLs

@@ -1,5 +1,8 @@
 ### dashboardthemes ----------------------------------------
 
+### v1.1.3
+* Updated image links to new URLs 
+
 ### v1.1.2
 * Fixed problem where shiny notifications were all the same colour for different statuses
 * Fixed problem where DataTable font colour didn't reflect choice of application font colour

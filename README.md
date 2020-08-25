@@ -13,7 +13,7 @@ An R package to provide custom theme options for Shinydashboard applications.
 <!-- badges: end -->
 
 
-<a href="https://ibb.co/dbMBHn" target="_blank"><img src="https://thumb.ibb.co/dbMBHn/blue_gradient.png" alt="blue_gradient" border="0"></a> <a href="https://ibb.co/bvGNOS" target="_blank"><img src="https://thumb.ibb.co/bvGNOS/boe_website.png" alt="boe_website" border="0"></a> <a href="https://ibb.co/cNgYV7" target="_blank"><img src="https://thumb.ibb.co/cNgYV7/grey_dark.png" alt="grey_dark" border="0"></a> <a href="https://ibb.co/iuFGiS" target="_blank"><img src="https://thumb.ibb.co/iuFGiS/grey_light.png" alt="grey_light" border="0"></a> <a href="https://ibb.co/mW4WHn" target="_blank"><img src="https://thumb.ibb.co/mW4WHn/onenote.png" alt="onenote" border="0"></a> <a href="https://ibb.co/mYhkcn" target="_blank"><img src="https://thumb.ibb.co/mYhkcn/poor_mans_flatly.png" alt="poor_mans_flatly" border="0"></a> <a href="https://ibb.co/ea4LA7" target="_blank"><img src="https://thumb.ibb.co/ea4LA7/purple_gradient.png" alt="purple_gradient" border="0"></a>
+<a href="https://ibb.co/cC96fp3" target="_blank"><img src="https://thumb.ibb.co/dbMBHn/blue_gradient.png" alt="blue_gradient" border="0"></a> <a href="https://ibb.co/JrtqydH" target="_blank"><img src="https://thumb.ibb.co/bvGNOS/boe_website.png" alt="boe_website" border="0"></a> <a href="https://ibb.co/j4KjmMZ" target="_blank"><img src="https://thumb.ibb.co/cNgYV7/grey_dark.png" alt="grey_dark" border="0"></a> <a href="https://ibb.co/hMw03n4" target="_blank"><img src="https://thumb.ibb.co/iuFGiS/grey_light.png" alt="grey_light" border="0"></a> <a href="https://ibb.co/x1m2n4b" target="_blank"><img src="https://thumb.ibb.co/mW4WHn/onenote.png" alt="onenote" border="0"></a> <a href="https://ibb.co/G3wySmY" target="_blank"><img src="https://thumb.ibb.co/mYhkcn/poor_mans_flatly.png" alt="poor_mans_flatly" border="0"></a> <a href="https://ibb.co/bmDbf6t" target="_blank"><img src="https://thumb.ibb.co/ea4LA7/purple_gradient.png" alt="purple_gradient" border="0"></a>
 <br>
 
 ## Features
@@ -284,31 +284,31 @@ Example of creating a custom theme object. Each parameter can be changed as requ
 
 
 ### Blue gradient
-<a href="https://ibb.co/dbMBHn" target="_blank"><img src="https://preview.ibb.co/ik0hOS/blue_gradient.png" alt="blue_gradient" border="0"></a>
+<a href="https://ibb.co/cC96fp3" target="_blank"><img src="https://preview.ibb.co/ik0hOS/blue_gradient.png" alt="blue_gradient" border="0"></a>
 <br>
 
 ### Flat Red
-<a href="https://ibb.co/bvGNOS" target="_blank"><img src="https://preview.ibb.co/mx7U3S/boe_website.png" alt="boe_website" border="0"></a>
+<a href="https://ibb.co/JrtqydH" target="_blank"><img src="https://preview.ibb.co/mx7U3S/boe_website.png" alt="boe_website" border="0"></a>
 <br>
 
 ### Grey light
-<a href="https://ibb.co/iuFGiS" target="_blank"><img src="https://preview.ibb.co/cVBp3S/grey_light.png" alt="grey_light" border="0"></a>
+<a href=" https://ibb.co/hMw03n4" target="_blank"><img src="https://preview.ibb.co/cVBp3S/grey_light.png" alt="grey_light" border="0"></a>
 <br>
 
 ### Grey dark
-<a href="https://ibb.co/cNgYV7" target="_blank"><img src="https://preview.ibb.co/bTgp3S/grey_dark.png" alt="grey_dark" border="0"></a>
+<a href="https://ibb.co/j4KjmMZ" target="_blank"><img src="https://preview.ibb.co/bTgp3S/grey_dark.png" alt="grey_dark" border="0"></a>
 <br>
 
 ### OneNote
-<a href="https://ibb.co/mW4WHn" target="_blank"><img src="https://preview.ibb.co/fxYQcn/onenote.png" alt="onenote" border="0"></a>
+<a href="https://ibb.co/x1m2n4b" target="_blank"><img src="https://preview.ibb.co/fxYQcn/onenote.png" alt="onenote" border="0"></a>
 <br>
 
 ### Poor man's Flatly
-<a href="https://ibb.co/mYhkcn" target="_blank"><img src="https://preview.ibb.co/hRnwiS/poor_mans_flatly.png" alt="poor_mans_flatly" border="0"></a>
+<a href="https://ibb.co/G3wySmY" target="_blank"><img src="https://preview.ibb.co/hRnwiS/poor_mans_flatly.png" alt="poor_mans_flatly" border="0"></a>
 <br>
 
 ### Purple gradient
-<a href="https://ibb.co/ea4LA7" target="_blank"><img src="https://preview.ibb.co/mAK93S/purple_gradient.png" alt="purple_gradient" border="0"></a>
+<a href="https://ibb.co/bmDbf6t" target="_blank"><img src="https://preview.ibb.co/mAK93S/purple_gradient.png" alt="purple_gradient" border="0"></a>
 
 ## Known issues
   
