@@ -1,5 +1,8 @@
 ### dashboardthemes ----------------------------------------
 
+### v1.1.4
+* Switched automated checks from Travis to Github Actions
+
 ### v1.1.3
 * Updated image links to new URLs 
 
