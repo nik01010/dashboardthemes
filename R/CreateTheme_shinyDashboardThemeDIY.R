@@ -68,14 +68,14 @@
 #' @param buttonBackColorHover String. Button background colour: hovered.
 #' @param buttonTextColorHover String. Button font colour: hovered.
 #' @param buttonBorderColorHover String. Button border line colour: hovered.
-#' @param buttonHeight Numeric. Button shape height. Defaults to 34.
+#' @param buttonHeight Numeric. Button shape height.
 #' @param buttonPadding String. Button label padding. Defaults to "6px 12px".
 #' @param textboxBackColor String. Textbox background colour.
 #' @param textboxBorderColor String. Textbox border line colour.
 #' @param textboxBorderRadius Numeric. Textbox shape radius.
 #' @param textboxBackColorSelect String. Textbox background colour: selected.
 #' @param textboxBorderColorSelect String. Textbox border line colour: selected.
-#' @param textboxHeight Numeric. Textbox shape height. Defaults to 34.
+#' @param textboxHeight Numeric. Textbox shape height.
 #' @param textboxPadding String. Textbox text padding. Defaults to "6px 12px".
 #' @param tableBackColor String. Table background colour.
 #' @param tableBorderColor String. Table border line colour.
@@ -228,10 +228,10 @@ shinyDashboardThemeDIY <- function(
   boxDangerColor, tabBoxTabColor, tabBoxTabTextSize, tabBoxTabTextColor, tabBoxTabTextColorSelected,
   tabBoxBackColor, tabBoxHighlightColor, tabBoxBorderRadius, buttonBackColor, buttonTextColor,
   buttonBorderColor, buttonBorderRadius, buttonBackColorHover, buttonTextColorHover, buttonBorderColorHover,
-  buttonHeight = 34, buttonPadding = "6px 12px", textboxBackColor, textboxBorderColor, textboxBorderRadius,
-  textboxBackColorSelect, textboxBorderColorSelect, textboxHeight = 34, textboxPadding = "6px 12px",
-  tableBackColor, tableBorderColor, tableBorderTopSize, tableBorderRowSize, primaryFontColor = "auto",
-  successFontColor = "auto", warningFontColor = "auto", dangerFontColor = "auto",
+  buttonHeight = "auto", buttonPadding = "6px 12px", textboxBackColor, textboxBorderColor,
+  textboxBorderRadius, textboxBackColorSelect, textboxBorderColorSelect, textboxHeight = "auto",
+  textboxPadding = "6px 12px", tableBackColor, tableBorderColor, tableBorderTopSize, tableBorderRowSize,
+  primaryFontColor = "auto", successFontColor = "auto", warningFontColor = "auto", dangerFontColor = "auto",
   infoFontColor = "auto", boxInfoColor = "auto"
 ) {
 
