@@ -65,14 +65,14 @@ shinyDashboardThemeDIY(
   buttonBackColorHover,
   buttonTextColorHover,
   buttonBorderColorHover,
-  buttonHeight = 34,
+  buttonHeight = "auto",
   buttonPadding = "6px 12px",
   textboxBackColor,
   textboxBorderColor,
   textboxBorderRadius,
   textboxBackColorSelect,
   textboxBorderColorSelect,
-  textboxHeight = 34,
+  textboxHeight = "auto",
   textboxPadding = "6px 12px",
   tableBackColor,
   tableBorderColor,
@@ -207,7 +207,7 @@ shinyDashboardThemeDIY(
 
 \item{buttonBorderColorHover}{String. Button border line colour: hovered.}
 
-\item{buttonHeight}{Numeric. Button shape height. Defaults to 34.}
+\item{buttonHeight}{Numeric. Button shape height.}
 
 \item{buttonPadding}{String. Button label padding. Defaults to "6px 12px".}
 
@@ -221,7 +221,7 @@ shinyDashboardThemeDIY(
 
 \item{textboxBorderColorSelect}{String. Textbox border line colour: selected.}
 
-\item{textboxHeight}{Numeric. Textbox shape height. Defaults to 34.}
+\item{textboxHeight}{Numeric. Textbox shape height.}
 
 \item{textboxPadding}{String. Textbox text padding. Defaults to "6px 12px".}
 
