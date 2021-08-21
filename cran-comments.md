@@ -53,3 +53,14 @@
 2020-08-25
 * No errors, warnings or notes.
 * As requested in v1.1.2 submission, updated image links to new URLs
+
+# v1.1.5
+## Test environments
+* Windows 10, R 4.1.0 (on local PC and GitHub Actions).
+* Linux Ubuntu 16.04, R release, oldrel, devel (on GitHub Actions).
+* Mac OS X, R release (on GitHub Actions).
+
+## Submission comments
+2021-08-21
+* No errors, warnings or notes.
+* Fixed problem where package was overriding two CSS parameters used by another package
