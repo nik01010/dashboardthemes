@@ -3,7 +3,7 @@
 ```diff
 
 -WARNING: the 'dashboardthemes' package is no longer being maintained as of version 1.1.5, 
-and will eventually be removed from CRAN.
+-and will eventually be removed from CRAN.
 
 -Please only use this package at your own risk.
 
