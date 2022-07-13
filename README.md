@@ -1,8 +1,5 @@
 # dashboardthemes
 
-<a href="https://nik01010.wordpress.com/" target="_blank">Blog</a> | <a href="https://nik01010.wordpress.com/contact/" target="_blank">Contact</a>
-<br>
-
 An R package to provide custom theme options for Shinydashboard applications.
 
 <!-- badges: start -->
