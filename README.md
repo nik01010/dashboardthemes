@@ -1,14 +1,14 @@
 # dashboardthemes
 
-<span style="color:#FF0000">
+```diff
 
-WARNING: the 'dashboardthemes' package is no longer being maintained as of version 1.1.5, and will eventually be removed from CRAN.
+-WARNING: the 'dashboardthemes' package is no longer being maintained as of version 1.1.5, and will eventually be removed from CRAN.
 
-Please only use this package at your own risk.
+-Please only use this package at your own risk.
 
-It is recommended that users switch over to the 'bslib' or 'fresh' theming packages available on CRAN.
+-It is recommended that users switch over to the 'bslib' or 'fresh' theming packages available on CRAN.
 
-</span>
+```
 
 An R package to provide custom theme options for Shinydashboard applications.
 
