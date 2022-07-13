@@ -6,7 +6,7 @@ An R package to provide custom theme options for Shinydashboard applications.
 [![CRAN status](https://www.r-pkg.org/badges/version/dashboardthemes)](https://CRAN.R-project.org/package=dashboardthemes)
 [![R build status](https://github.com/nik01010/dashboardthemes/workflows/R-CMD-check/badge.svg)](https://github.com/nik01010/dashboardthemes/actions)
 [![Codecov test coverage](https://codecov.io/gh/nik01010/dashboardthemes/branch/master/graph/badge.svg)](https://codecov.io/gh/nik01010/dashboardthemes?branch=master)
-[![Stability: Active](https://masterminds.github.io/stability/active.svg)](https://masterminds.github.io/stability/active.html)
+[![Stability: Unsupported](https://masterminds.github.io/stability/unsupported.svg)](https://masterminds.github.io/stability/unsupported.html)
 <!-- badges: end -->
 
 
